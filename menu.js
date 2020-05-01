@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 function visualInterface() {
-  console.log("\033[2J");
+  console.clear();
   console.log("*********************************************");
   console.log("**   Welcome to the v1 permaculture sort   **");
   console.log("*********************************************");
@@ -21,21 +21,20 @@ function visualInterface() {
 
 function userInput() {
   return new Promise((response) => {
-    takeInput((input) => {
+    rl.on("line", (input) => {
       response(input);
     });
   });
 }
 
 async function addVegetable() {
-  console.log("\033[2J");
+  console.clear();
   console.log("*********************************************");
   console.log("**             Add vegetable               **");
   console.log("*********************************************");
 
   console.log("--> name ?");
   this.name = await this.userInput();
-
 
   console.log("--> exposition ?");
   this.exposition = await this.userInput();
@@ -54,7 +53,7 @@ async function addVegetable() {
 }
 
 async function variableVue(variableList) {
-  console.log("\033[2J");
+  console.clear();
   console.log("*********************************************");
   console.log("**             Variable list               **");
   console.log("*********************************************");
@@ -80,7 +79,7 @@ async function sortVegetable(result) {
     });
     return null;
   } else {
-    console.log("\033[2J");
+    console.clear();
     console.log("*********************************************");
     console.log("**          Sort by vegetable              **");
     console.log("*********************************************");
@@ -112,8 +111,6 @@ async function messageLog(logValue) {
   }
   return null;
 }
-
-
 
 module.exports = {
   visualInterface: visualInterface,
