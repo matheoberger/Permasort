@@ -1,14 +1,17 @@
 const readline = require("readline");
 const util = require("util");
 
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
   terminal: false,
 });
 
+
+
 function visualInterface() {
-  console.log("\033[2J");
+  console.clear()
   console.log("*********************************************");
   console.log("**   Welcome to the v1 permaculture sort   **");
   console.log("*********************************************");
@@ -28,7 +31,7 @@ function userInput() {
 }
 
 async function addVegetable() {
-  console.log("\033[2J");
+  console.clear()
   console.log("*********************************************");
   console.log("**             Add vegetable               **");
   console.log("*********************************************");
@@ -53,7 +56,7 @@ async function addVegetable() {
 }
 
 async function variableVue(variableList) {
-  console.log("\033[2J");
+  console.clear()
   console.log("*********************************************");
   console.log("**             Variable list               **");
   console.log("*********************************************");
@@ -79,7 +82,7 @@ async function sortVegetable(result) {
     });
     return null;
   } else {
-    console.log("\033[2J");
+    console.clear()
     console.log("*********************************************");
     console.log("**          Sort by vegetable              **");
     console.log("*********************************************");
@@ -110,10 +113,6 @@ async function messageLog(logValue) {
       break;
   }
   return null;
-}
-
-function takeInput(callback) {
-
 }
 
 module.exports = {
