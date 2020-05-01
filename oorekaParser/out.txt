@@ -1,2 +1,2716 @@
-Famille : Boraginacées
-undefined
+TypeError: undefined is not a constructor (evaluating 'site.init("/plante/voir/178/bourrache", "plante", "voir", "false", undefined, 1)')
+
+  https://jardinage.ooreka.fr/plante/voir/178/bourrache:2613
+  https://media.ooreka.fr/static/vendor/jquery.min.js:2 in o
+  https://media.ooreka.fr/static/vendor/jquery.min.js:2 in fireWith
+  https://media.ooreka.fr/static/vendor/jquery.min.js:2 in ready
+  https://media.ooreka.fr/static/vendor/jquery.min.js:2 in B
+
+		
+									Bourrache : planter et cultiver – Ooreka
+											
+							
+	
+	
+		
+	
+	
+		
+	
+	
+	
+	
+			
+	
+	
+	
+
+										
+		
+		
+					
+			
+							
+										
+							
+							
+										
+	
+		
+	
+	
+		$(function() {
+		    $("img.lazy").show();
+		    $("img.lazy").Lazy();
+		});
+	
+	
+			
+	
+
+				
+		
+		  	
+  	  	
+				
+	
+						
+	
+		
+	
+				
+		
+						
+
+var tagCoWidth = window.innerWidth;
+var tc_vars = {
+
+	env_template		: 'fiche_plantes',
+	env_work		: 'production',
+	env_channel		: 'm',
+	env_site		: 'jardinage.ooreka.fr',
+	env_country		: 'fr',
+	env_width		:  tagCoWidth,
+	user_id			: '',
+	user_gender		: '',
+	user_category		: '',
+	page_cat1		: 'jardin-piscine-et-exterieur',
+	univers			: 'maison',
+	geolocalisation		: '',
+	method_geolocalisation	: '',
+	page_name		: '',
+	search_page_number	: '',
+	search_keywords		: '',
+	xt_page			: 'fiche_plantes::voir_plante::bourrache',
+	xtn1			: '',
+	xtn2			: '2',
+	xt_ac			: '',
+	xtsite			: '564527',
+	xt_mutlc		: '',
+	xtcustom		: {'typePage':"plante",'typeMobile':"",'typeContenu':"plant",'idContenu':"260406",'titreContenu':"bourrache",'niche':"jardinage",'univers':"maison",'login':"2", 'ccId' : ''},
+	xt_form			: '',
+	random			: '538639823',
+	adserverPosition	: '',
+	adserverParam		: '',
+	conf_staticServerDomain	: 'static.ooreka.fr',
+	conf_staticSiteName	: 'cc',
+	conf_staticVersion	: '1.70.82',
+	conf_xitiSegmentId	: '17606402',
+	url			: '/plante/voir/178/bourrache',
+	poool_page_type			: 'premium'
+
+};
+
+			
+
+
+{
+  "isAccessibleForFree": "False",
+  "hasPart":
+    {
+      "@type": "WebPageElement",
+      "isAccessibleForFree": "False",
+      "cssSelector" : ".content-poool"
+    }
+}
+
+
+	!function(w,d,s,u,p,t,o){
+         w[p]=w[p]||function(){
+(w[p]._q=w[p]._q||[]).push(arguments)},
+         t=d.createElement(s),o=d.getElementsByTagName(s)[0],
+         t.async=1,t.src=u,o.parentNode.insertBefore(t,o)
+     }(window, document, "script", "https://assets.poool.fr/poool.min.js", "poool");
+
+
+	var adsAlreadyDisplayed = [];
+  	var pubFormatDesktopList = [];
+  	var pubFormatMobileList = [];
+  	var minWidthDesktopList = [];
+  	var lazyList = [];
+  	var getOASAd = function(pubFormatDesktop, pubFormatMobile, minWidthDesktop, lazy) {
+	    if (typeof getOASAdTC !== 'undefined') {
+        /* Poool is include from CommanderAct(tagco) */
+        if(typeof pooolSend != "undefined") {
+          if (pubFormatDesktop != null && pubFormatDesktop.indexOf("_ad_multi_content") == -1) {
+            getOASAdTC(pubFormatDesktop, pubFormatMobile, minWidthDesktop, lazy);
+          } else {
+            pubFormatDesktopList.push(pubFormatDesktop);
+            pubFormatMobileList.push(pubFormatMobile);
+            minWidthDesktopList.push(minWidthDesktop);
+            lazyList.push(lazy);
+          }
+        }
+        /* Display ads */
+        else {
+          getOASAdTC(pubFormatDesktop, pubFormatMobile, minWidthDesktop, lazy);
+        }
+    	}
+  	};
+
+  	poool("event", "onDisabled", function(){
+    	$('.content-poool').css("height", "auto");
+    	$.each(pubFormatDesktopList, function(i, val) {
+	      	if (typeof getOASAdTC !== 'undefined') {
+		        getOASAdTC(val, pubFormatMobileList[i], minWidthDesktopList[i], lazyList[i]);
+	      	}
+    	});
+  	});
+
+  	poool("event", "onRelease", function(){
+    	$('.content-poool').css("height", "auto");
+    	$.each(pubFormatDesktopList, function(i, val) {
+      		if (typeof getOASAdTC !== 'undefined') {
+        		getOASAdTC(val, pubFormatMobileList[i], minWidthDesktopList[i], lazyList[i]);
+      		}
+		  });
+  	});
+
+			
+				
+		
+		var urlAladin='';
+		var _pjstatsVus='';
+		var loadScriptPJVar = setInterval(loadScriptPJ, 2000);
+		function loadScriptPJ() {
+			if(tC.privacy.getOptinCategories().indexOf('2') !== -1) {
+				scriptPJH = document.createElement("script");
+				scriptPJH.charset = "UTF-8";
+				scriptPJH.type = "text/javascript";
+				scriptPJH.src = "https://assets.prod.ooreka-static.fr/b/static/js/vendor/trk/pjh.min.js";
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] || document.getElementsByTagName('script')[0].parentNode).insertBefore(scriptPJH, null);
+
+				
+				urlAladin = "https://www.pagesjaunes.fr/stat/";
+				_pjstatsVus = {"[data-pjstats*=\"DENOMINATION-EXACTE\"]":{"aladin":"API"}};
+				
+
+				scriptPJF = document.createElement("script");
+				scriptPJF.charset = "UTF-8";
+				scriptPJF.type = "text/javascript";
+				scriptPJF.src = "https://assets.prod.ooreka-static.fr/b/static/js/vendor/trk/pjh.min.js";
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] || document.getElementsByTagName('script')[0].parentNode).insertBefore(scriptPJF, null);
+				clearInterval(loadScriptPJVar);
+			}
+			if(tC.getCookie(tC.privacy.getCN()) !== "") {
+				clearInterval(loadScriptPJVar);
+			}
+		}
+		
+		
+																			#footer_tc_privacy_container_text{width:79%;display:inline-block;}#footer_tc_privacy_container_button,#footer_tc_privacy_container_text{vertical-align:middle;}#footer_tc_privacy_container_button{width:19%;display:inline-block;}#footer_tc_privacy_button, #footer_tc_privacy_button_2{float: right;}#footer_tc_privacy_button_2{margin: 10px 0px 10px 10px;}@media(max-width: 767px){#footer_tc_privacy_button_2{margin:10px 0;}}@media(min-width: 768px) and (max-width: 979px){#footer_tc_privacy_container_text{width:69%;}#footer_tc_privacy_container_button{width:29%;}}@media(max-width: 767px)   {#footer_tc_privacy_container_text{width:100%;}#footer_tc_privacy_container_button{width:100%;}#footer_tc_privacy_button, #footer_tc_privacy_button_2{margin:0 0 0 0;float: none;width:100%;}}.fancybox-margin{margin-right:0px;}.p3-component .p3-outlet{width:0;height:0;display:block}.p3-paywall.p3-component .p3-outlet{width:100%;height:auto}.p3-paywall.p3-component.p3-locked[data-p3-layout=portrait]{margin-bottom:-70px;transform:translateY(-70px)}.p3-popover.p3-component{position:fixed;bottom:30px;left:0;right:0;margin:auto;width:80%;max-width:1200px;height:auto;z-index:15}@media (max-width:1199px){.p3-popover.p3-component{width:100%;bottom:0}}.p3-popover.p3-component .p3-outlet{width:100%;height:auto}.p3-viewpay-modal{width:100%;height:100%;top:0;left:0;display:none;position:fixed;background-color:rgba(0,0,0,.9);z-index:2147483647}.p3-viewpay-modal.visible{display:block}.p3-viewpay-modal #cadreJokerlyADS{width:650px;height:450px;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto}@media (max-width:991px){.p3-viewpay-modal #cadreJokerlyADS{width:500px;height:350px}}@media (max-width:575px){.p3-viewpay-modal #cadreJokerlyADS{width:100%;height:100%}}
+
+
+
+
+	
+		
+		getOASAd('_ad_desktop_wallpaper', null, 1000);
+		var $wallpaperAdDiv = $("#_ad_desktop_wallpaper");
+		var intervalIDWallpaperAdDiv;
+		setTimeout(function() {
+			intervalIDWallpaperAdDiv = window.setInterval(editWallpaperDiv, 500);
+		}, 2000);
+		var cntWallpaperAdDiv = 0;
+
+		function editWallpaperDiv() {
+			cntWallpaperAdDiv++;
+			if ($wallpaperAdDiv.has('div').length && $wallpaperAdDiv.is(":visible")) {
+				if($("#_ad_desktop_wallpaper").find('iframe').first().data('is-safeframe') == true) {
+					$wallpaperAdDiv.parent().addClass("ad-padded");
+					$(".header_niche ").css("width", "1000px");
+					clearInterval(intervalIDWallpaperAdDiv);
+				}
+				if($("#_ad_desktop_wallpaper").find('iframe').first().data('is-safeframe') == false) {
+					clearInterval(intervalIDWallpaperAdDiv);
+				}
+			}
+			if(cntWallpaperAdDiv >= 10) {
+				clearInterval(intervalIDWallpaperAdDiv);
+			}
+		}
+		
+	
+
+													
+	
+		
+			Envoyer à un ami
+		
+		
+			
+				
+										
+						Email du destinataire *
+						
+						Veuillez saisir un email valide
+					
+										
+						Prénom du destinataire *
+						
+						Veuillez saisir le nom du destinataire
+					
+										
+						Votre email *
+						
+						Veuillez saisir un email valide
+					
+										
+						Votre nom *
+						
+						Veuillez saisir votre nom
+					
+										
+						Contenu de votre message
+						
+						
+					
+										
+						Combien font seize plus neuf ? (en chiffre) *
+						
+						
+						Veuillez saisir la valeur numérique correspondant à l'addition
+					
+				
+				* champs obligatoires
+				Aucune information renseignée ne sera conservée.
+			
+			
+				Envoyer
+			
+		
+		
+			Nous vous remercions d'avoir suggéré cette question.
+		
+	
+		
+					
+				Gratuit
+				
+				
+					
+				
+				
+					Nous avons les réponses à vos questions !
+					Un guide clair et complet de 145 pages rédigé par nos experts.
+					Télécharger
+				
+				
+			
+			
+	
+	
+		
+		
+			
+		
+		Devenez membre Ooreka !
+		100% de nos membres sont curieux.
+		99.9% de nos membres sont beaux.
+		95% de nos membres sont malins.
+		Alors et vous ? Faites comme eux ! Inscrivez-vous !
+		S'inscrire
+		
+	
+	
+		
+		Gratuit
+		
+			
+		
+		
+			Nous pouvons vous conseiller dans vos projets.
+			Inscrivez-vous pour poser vos questions directement aux experts sur tous vos sujets du quotidien.
+		
+		S'inscrire
+		
+			1 million de membres
+			500 experts pour vous répondre
+		
+		
+	
+	
+		
+		Gratuit
+		
+		
+			
+		
+		
+			Recevez le meilleur de nos astuces !
+			Inscrivez-vous pour recevoir nos conseils, bons plans et astuces...
+			S'inscrire
+		
+		
+	
+
+
+	
+		
+		
+			
+		
+		Ne partez pas tout de suite !
+		Aidez-nous en 2 min à mieux vous comprendre pour mieux répondre à vos besoins de bien-être minceur.
+		Répondre au questionnaire
+		Toutes vos réponses resteront strictement confidentielles et les informations recueillies seront utilisées uniquement dans le cadre de cette étude
+	
+
+
+
+	
+		
+		
+			
+		
+		Ne partez pas tout de suite !
+		Quel est votre position exacte dans l'entreprise ? Aidez-nous à mieux vous connaître pour mieux répondre à vos futures problématiques.
+		Répondre au questionnaire
+		Toutes vos réponses resteront strictement confidentielles et les informations recueillies seront utilisées uniquement dans le cadre de cette étude
+	
+
+
+
+	
+		
+		
+			
+		
+		Ne partez pas tout de suite !
+		Donnez-nous 2 min pour mieux cerner vos besoins en immobilier et orienter vos futurs choix.
+		Répondre au questionnaire
+		Toutes vos réponses resteront strictement confidentielles et les informations recueillies seront utilisées uniquement dans le cadre de cette étude
+	
+
+
+
+	
+		
+		
+			
+		
+		Ne partez pas tout de suite !
+		Accordez-nous 2 min pour nous aider à mieux répondre à vos futures problématiques d'animaux domestiques.
+		Répondre au questionnaire
+		Toutes vos réponses resteront strictement confidentielles et les informations recueillies seront utilisées uniquement dans le cadre de cette étude
+	
+
+
+
+	
+		
+		
+			
+		
+		Ne partez pas tout de suite !
+		Ne partez pas tout de suite ! Laissez-nous 2 min pour prendre note de vos besoins et nous aider à améliorer votre quotidien.
+		Répondre au questionnaire
+		Toutes vos réponses resteront strictement confidentielles et les informations recueillies seront utilisées uniquement dans le cadre de cette étude
+	
+
+	
+		
+		Demander un devis à 
+		La confidentialité de vos informations est notre priorité. Ces informations seront transmises uniquement à ce professionnel afin qu'il puisse répondre au mieux à votre demande de devis.
+		
+			
+				1
+				Description
+			
+			
+				2
+				Contact
+			
+		
+		
+			
+				
+				
+				
+				
+				
+				
+				*Tous les champs sont obligatoires
+				
+					Quel est le code postal du lieu des travaux* ?
+					
+					
+						
+						
+						
+					
+					Merci de préciser le code postal
+					Ce code postal n'est pas valide
+				
+				
+					Quel est le type de batiment* ?
+					
+						
+						
+							
+							Un appartement
+							
+						
+						
+							
+							Une maison
+							
+						
+						
+							
+							Autre (précisez) :
+						
+					
+					Merci de préciser le type de bâtiment
+				
+				
+					Vous êtes*
+					
+						
+						
+							
+							Propriétaire du logement
+						
+						
+							
+							Locataire du logement
+						
+					
+					Merci de préciser si vous êtes propriétaire ou locataire
+				
+				
+					Décrivez votre projet en fournissant le plus de détails possible* :
+					
+						
+					
+					Merci de décrire votre projet
+				
+				
+					Annuler
+					Continuer
+				
+				
+Les données personnelles que vous nous communiquez seront utilisées uniquement pour vous permettre de bénéficier de
+nos services. Elles sont destinées à Fine Media et ses sous-traitants et peuvent être transmises à nos prestataires
+en-dehors de l'Union européenne, desquels nous avons exigé des garanties appropriées de protection des données
+personnelles, ainsi qu'aux professionnels. Vous disposez de droits d'accès, de rectification, d'effacement,de
+portabilité, de limitation, d'opposition, de retrait de votre consentement à tout moment et du droit d'introduire
+une réclamation auprès d'une autorité de contrôle, ainsi que d'organiser le sort de vos données post-mortem. Vous
+pouvez exercer ces droits en écrivant à l'adresse DPO Solocal Group - Ooreka, 204, rond-point du Pont de Sèvres -
+92649 Boulogne-Billancourt ou à l'adresse email suivante dpo.ooreka@solocal.com.
+Un justificatif d'identité pourra vous être demandé. Nous conservons vos données pendant 3 ans à compter de la
+dernière trace d'activité sur votre compte.
+			
+			
+				
+					*Tous les champs sont obligatoires
+					
+						Nom*
+						
+							
+						
+						Merci de préciser votre nom
+					
+					
+						Prénom*
+						
+							
+						
+						Merci de préciser votre prénom
+					
+					
+						Email*
+						
+							
+						
+						Merci de préciser votre email
+						Ce code postal n'est pas valide
+					
+					
+						Numéro de téléphone*
+						
+							
+						
+						Merci de préciser votre numéro de téléphone
+						Ce code postal n'est pas valide
+					
+				
+				
+					Retour
+					Envoyer la demande de devis
+				
+				
+Les données personnelles que vous nous communiquez seront utilisées uniquement pour vous permettre de bénéficier de
+nos services. Elles sont destinées à Fine Media et ses sous-traitants et peuvent être transmises à nos prestataires
+en-dehors de l'Union européenne, desquels nous avons exigé des garanties appropriées de protection des données
+personnelles, ainsi qu'aux professionnels. Vous disposez de droits d'accès, de rectification, d'effacement,de
+portabilité, de limitation, d'opposition, de retrait de votre consentement à tout moment et du droit d'introduire
+une réclamation auprès d'une autorité de contrôle, ainsi que d'organiser le sort de vos données post-mortem. Vous
+pouvez exercer ces droits en écrivant à l'adresse DPO Solocal Group - Ooreka, 204, rond-point du Pont de Sèvres -
+92649 Boulogne-Billancourt ou à l'adresse email suivante dpo.ooreka@solocal.com.
+Un justificatif d'identité pourra vous être demandé. Nous conservons vos données pendant 3 ans à compter de la
+dernière trace d'activité sur votre compte.
+			
+		
+	
+
+
+	
+		
+		Votre demande de devis a bien été envoyée à 
+		Fermer
+	
+
+
+	
+		
+		Vous avez déjà envoyé une demande de devis à ce professionnel.
+		Fermer
+	
+
+
+	
+		
+		Demande de devis impossible.
+		Fermer
+	
+
+	
+	
+	
+	
+
+				
+					
+				Inscription
+				Connexion
+			
+							
+				Maison
+				Argent
+				Famille
+				Santé
+				Droits
+				Carrière
+				Véhicule
+				Entreprise
+			
+			
+	
+			
+						
+				
+			
+												
+												
+						
+					
+									
+				
+			
+				
+											
+							 
+							MENU
+						
+										Jardinage
+					
+						
+					
+					
+				
+				
+					
+						
+																						Accueil
+																																																															Les bases du jardinage
+																																																																Semer, planter, tailler
+																																																																Trouver une plante 
+																																																																Conseils & astuces
+																																																																Qui contacter
+																					
+						
+																								
+										Documents
+									
+																																	
+										Plus
+										
+																																	Toutes les questions / réponses
+																																												Tous les articles "à la loupe"
+																																												Toutes les astuces
+																																												Toutes les fiches pratiques
+																																												Annuaire
+																																												Tous les experts
+																															
+									
+																																			
+					
+																
+							
+								
+									Inscription
+								
+							
+							
+								
+									Connexion
+								
+							
+						
+										Tous les univers Ooreka
+				
+								
+											
+						
+																											
+									
+			
+		
+	
+
+
+	$('body').bind('touchstart click', null);
+
+
+
+													
+
+getOASAd('_ad_desktop_topBanner', '_ad_mobile_banner')				
+	
+		
+			Accueil
+		
+		/
+					
+				
+					Jardinage
+				
+			
+												/
+					
+						
+							Plantes
+						
+					
+																
+						/
+						Bourrache
+					
+											Bourrache
+	
+		Sommaire
+	
+	
+		HAUT
+	
+	
+		
+			Photos
+			En résumé
+			Plantes du même type
+			Espèces et variétés
+														Semis
+																																	Culture et entretien
+																										Maladies, nuisibles et parasites
+																					Récolte
+																					Multiplication
+																					Conseils écologiques
+																										Un peu d’histoire…
+											
+							
+				Télécharger en .pdf
+			
+				
+			Trouver une autre plante
+		
+	
+			
+			
+	
+				Bourrache
+											
+										
+		Écrit par les experts Ooreka
+	
+								
+							
+	
+	
+	
+				
+									
+						Télécharger en .pdf
+					
+							
+				
+			
+				
+					Sommaire
+					
+						
+							Photos
+						
+						
+							En résumé
+						
+						
+							Plantes du même type
+						
+						
+							Espèces et variétés
+						
+																														
+										Semis
+									
+																																																																									
+										Culture et entretien
+									
+																																																										
+										Maladies, nuisibles et parasites
+									
+																																													
+										Récolte
+									
+																																													
+										Multiplication
+									
+																																													
+										Conseils écologiques
+									
+																																																										
+										Un peu d’histoire…
+									
+																										
+											
+							Télécharger en .pdf
+						
+										
+						Trouver la plante qu'il vous faut
+					
+				
+			
+			
+				
+										
+						
+																																			
+								
+							
+							
+								Bourrache 
+								Voir le diapo
+							
+						
+						
+													
+								
+																																																																																																																								
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																																																																																	
+												
+											
+																											
+							
+											
+										La bourrache, très décorative avec ses fleurs en étoiles bleues, est une plante potagère, condimentaire et mellifère, fort utile pour l’environnement. Annuelle, elle se ressème, donnant deux, parfois trois générations dans la même année.
+					Sommaire
+					
+						
+							Photos
+						
+						
+							En résumé
+						
+						
+							Plantes du même type
+						
+						
+							Espèces et variétés
+						
+																														
+										Semis
+									
+																																													
+										Idées d'association
+									
+																																													
+										Culture et entretien
+									
+																																													
+										
+									
+																																													
+										Maladies, nuisibles et parasites
+									
+																																													
+										Récolte
+									
+																																													
+										Multiplication
+									
+																																													
+										Conseils écologiques
+									
+																																													
+										
+									
+																																													
+										Un peu d’histoire…
+									
+																										
+											
+							Télécharger en .pdf
+						
+										
+						Trouver la plante qu'il vous faut
+					
+				
+				
+					
+						
+getOASAd('_ad_desktop_right', null, 900)							
+							
+	
+		
+	
+	
+		
+			Télécharger en .pdf		
+	
+
+
+	40 plans de jardin
+			GRATUIT - 57231 téléchargements
+			
+	
+		Guides, modèles de lettre, fiches pratiques...
+		On vous laisse la carte. Faites votre choix !
+	
+					
+					
+												La bourrache, très décorative avec ses fleurs en étoiles bleues, est une plante potagère, condimentaire et mellifère, fort utile pour l’environnement. Annuelle, elle se ressème, donnant deux, parfois trois générations dans la même année.
+						
+																																			
+								
+							
+							
+								Bourrache 
+								Voir le diapo
+							
+						
+						
+													
+								
+																																																																																																																								
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																																																																																	
+												
+											
+
+																											
+							
+											
+				
+								
+					Bourrache en résumé
+					
+						Dénomination
+						
+							
+								Nom(s) commun(s)
+								Bourrache
+							
+							
+								Nom(s) latin(s)
+								Borago officinalis
+							
+							
+								Famille
+								Boraginacées
+							
+							
+								Type(s) de plante
+																Fleur 							
+		
+							
+																 ▶  Plante à fleurs
+ 
+																
+								
+								
+																Plante comestible 							
+																																																																															
+		
+			 ▶  Autres légumes | Aromatiques et condiments | Plante à tisane
+ 
+								
+															
+						
+					
+					
+																			Esthétique
+							
+																									
+										Couleur des fleurs
+										
+																							
+												
+																									
+														
+																															Fleurs blanches
+																																																																																																																																																																																			
+													
+																																			
+												
+																																			
+												
+																																			
+												
+																																			
+												
+																																			
+												
+																																			
+												
+																																			
+												
+																									
+														
+																																																																																																																																								Fleurs bleues
+																																																																										
+													
+																																			
+												
+																																			
+												
+																																			
+												
+																																	
+									
+																									
+										Couleur des feuilles
+										
+																					
+											
+																																
+											
+																																
+											
+																																
+											
+																							
+													
+																																																																							Feuillage vert foncé
+																																																																																																	
+												
+																																
+											
+																																
+											
+																																
+											
+																																
+											
+																																
+											
+																															
+									
+																																	
+										
+											Végétation
+											
+												
+													
+													Vivace : Plante qui vit plus de deux ans.
+													
+													Annuelle : Plante qui vit moins d'un an.
+													
+													Bisannuelle : Plante dont le cycle de vie dure deux années. La première année, la plante se développe ; la seconde année, elle donne fleurs et fruits, puis elle meurt.
+													
+													Pour en savoir plus
+												
+											
+										
+										
+																																		
+													Annuelle
+													
+														Annuelle : Plante qui vit moins d'un an.
+													
+												
+																																		
+													Bisannuelle
+													
+														Bisannuelle : Plante dont le cycle de vie dure deux années. La première année, la plante se développeeloppe ; la seconde année, elle donne fleurs et fruits, puis elle meurt.
+													
+												
+																					
+									
+																																	
+										
+											Feuillage
+											
+												
+													
+													Persistant : Le feuillage dure toute l'année.
+													
+													Semi-persistant ou semi-caduc : La plante conserve une partie de son feuillage toute l'année.
+													Caduc : La plante perd ses feuilles à l'automne.
+													
+													Pour en savoir plus
+												
+											
+										
+										
+																																		
+													Semi-persistant
+													
+														Semi-persistant ou semi-caduc : La plante conserve une partie de son feuillage toute l'année.
+													
+												
+																																	
+									
+																																																	
+										
+											Hauteur à maturité
+											
+												
+													
+													La hauteur à maturité est la hauteur à laquelle la plante s'élève naturellement quand elle bénéficie des conditions les plus favorables.
+													
+													La plante pourra prendre du temps pour atteindre cette hauteur, en fonction de la vitesse de sa croissance.
+													
+													La plante pourra aussi ne jamais atteindre sa hauteur à maturité, si elle est taillée régulièrement, ou si elle n'est pas cultivée dans les conditions optimales pour sa croissance.
+													
+													Pour en savoir plus
+												
+											
+										
+										
+											
+												0,30 à 0,60 m
+											
+										
+									
+																																	
+										Largeur à maturité
+										
+											
+												0,40 à 0,60 m
+											
+										
+									
+															
+						 					
+										
+						Jardinage
+						
+														
+								
+									Entretien
+									
+										
+											
+											Facile : La plante ne nécessite pas de soin particulier, ou des soins très simples.
+											
+											Modéré : La plante nécessite des soins réguliers ou un peu de pratique en jardinage.
+											
+											Difficile : La plante nécessite des soins importants et un savoir-faire en jardinage.
+											
+											Pour en savoir plus
+										
+									
+								
+								
+																			
+											
+											Facile
+											
+												Facile : La plante ne nécessite pas de soin particulier, ou des soins très simples.
+											
+										
+																	
+							
+														
+								
+									Besoin en eau
+									
+										
+											
+											Le besoin en eau de la plante peut être assuré par la pluie, l'humidité naturelle du sol ou l'arrosage.
+											Pour évaluer l'arrosage nécessaire, il faut aussi prendre en compte la température ambiante, à cause de l'évaporation, et de la capacité du sol à retenir l'eau.
+											
+											Faible : Pour une plante d'intérieur, arroser tous les mois. Pour une plante d'extérieur, elle supporte bien la sécheresse.
+											
+											Moyen : Pour une plante d'intérieur, arroser toutes les semaines ou toutes les deux semaines. Pour une plante d'extérieur, elle aura besoin d'apports d'eau avant que le sol sèche.
+											
+											Important : Pour une plante d'intérieur, arroser plusieurs fois par semaine. Pour une plante d'extérieur, il lui faut des apports d'eau abondants et réguliers.
+											
+											Pour en savoir plus
+										
+									
+								
+								
+																			
+											
+											Moyen
+											
+												Moyen : Pour une plante d'intérieur, arroser toutes les semaines ou toutes les deux semaines. Pour une plante d'extérieur, elle aura besoin d'apports d'eau avant que le sol sèche.
+											
+										
+																										
+							
+																						
+									
+										Croissance
+										
+											
+												
+												Lente : La plante atteint sa maturité en plusieurs décennies.
+												
+												Normale : La plante atteint sa maturité en quelques années.
+												
+												Rapide : La plante atteint sa maturité en quelques mois.
+												
+												Pour en savoir plus
+											
+										
+									
+									
+																															
+												Normale
+												
+													Normale : La plante atteint sa maturité en quelques années.
+												
+											
+																													
+								
+																													
+									
+										Multiplication
+										
+											
+												
+												La multiplication consiste à créer une nouvelle plante soi-même.
+												
+												Semis : La plante se reproduit par la plantation de graines.
+												
+												Pour en savoir plus
+												
+												Division : Une partie de la racine (rhizome, tubercule) sert à créer de nouvelles pousses.
+												
+												Pour en savoir plus
+												
+												Bouturage : Une branche est plantée en terre, où elle produit de nouvelles racines.
+												Pour en savoir plus
+												
+												Marcottage : La branche n'est pas coupée de la plante mais elle est en partie enfouie dans la terre, où elle développe ses propres racines.
+												
+												Pour en savoir plus
+												
+												Greffe : Un fragment de plante est implanté sur une autre plante.
+												
+												Pour en savoir plus
+												
+												Impossible : Il n'est pas possible, pour un particulier, de multiplier sa plante. S'il en veut une autre, il lui faut l'acheter auprès d'un professionnel.
+												
+											
+										
+									
+									
+																					
+												Semis
+												
+													Semis : La plante se reproduit par la plantation de graines.
+												
+											
+																																																																					
+								
+																													
+									
+										Résistance au froid
+										
+											
+												
+												Résistante (rustique) : Plante résistante au gel.
+												
+												À protéger (semi-rustique) : Plante qui supporte la fraîcheur mais qui nécessite une protection contre le gel.
+												
+												À rentrer (fragile) : Plante qui craint le froid et qui doit être abritée pendant la saison froide.
+												
+												Pour en savoir plus
+											
+										
+									
+									
+																															
+												
+												Moyenne
+												
+													À protéger (semi-rustique) : Plante qui supporte la fraîcheur mais qui nécessite une protection contre le gel.
+												
+											
+																													
+								
+																													
+									
+										Type de sol
+										
+											
+												
+												Sol argileux : Terre lourde et collante quand elle est humide, qui durcit et craquelle en séchant.
+												
+												Sol calcaire : Terre claire et crayeuse, sèche l'été et boueuse l'hiver.
+												
+												Sol sableux : Terre légère, facile à travailler et qui retient mal l'eau.
+												
+												Sol caillouteux : Sol chargé de cailloux et pauvre en matières organiques.
+												
+												Humifère : Noire et facile à travailler, elle ressemble à la terre en forêt.
+												
+												Terre de bruyère : Sol acide (pH 4 à 5), sableux et riche en humus.
+												
+												Terreau : C'est facile, cette terre s'achète en magasin !
+												
+												Pour en savoir plus
+											
+										
+									
+									
+																					
+												Sol argileux
+												
+													Sol argileux : Terre lourde et collante quand elle est humide, qui durcit et craquelle en séchant.
+												
+											
+																																									
+												Sol sableux
+												
+													Sol sableux : Terre légère, facile à travailler et qui retient mal l'eau.
+												
+											
+																															
+												Sol caillouteux
+												
+													Sol caillouteux : Sol chargé de cailloux et pauvre en matières organiques.
+												
+											
+																																									
+												Humus
+												
+													Humus : Terre riche en végétaux décomposés, noire ou très sombre, qui ne colle pas quand elle est humide, et facile à travailler. On parle aussi de sol humifère.
+												
+											
+																													
+								
+																													
+									
+										PH du sol
+										
+											
+												
+												Le pH mesure l'acidité du sol.
+												
+												Sol alcalin : Le pH est supérieur à 7. Il s'agit principalement des sols calcaires.
+												
+												Sol neutre : Le pH est compris entre 6,5 et 7,2. La plupart des plantes y poussent correctement.
+												
+												Sol acide : Le pH est inférieur à 7. Il s'agit principalement des terres de bruyère.
+												
+												Pour en savoir plus
+											
+										
+									
+									
+																															
+												Sol neutre
+												
+													Sol neutre : Le pH est compris entre 6,5 et 7,2. La plupart des plantes y poussent correctement.
+												
+											
+																													
+								
+																													
+									
+										Humidité du sol
+										
+											
+												
+												L'humidité du sol ne dépend pas de la pluie, mais de la manière dont le sol conserve l'eau ou non.
+												
+												Sol drainé : Sol frais mais où l'eau ne stagne pas.
+												
+												Sol humide : Sol où de l'eau stagne.
+												
+												Sol sec : Sol qui ne retient pas l'eau.
+												
+												Sol frais : Sol qui reste constamment humide (mais pas trempé).
+												Pour en savoir plus
+											
+										
+									
+									
+																					
+												Sol drainé
+												
+													Sol drainé : Sol frais mais où l'eau ne stagne pas.
+												
+											
+
+																																																	
+								
+																																											
+									
+										Anti-insectes
+										
+											
+												
+												Certaines plantes ont des vertus répulsives contre des nuisibles ou, au contraire, protègent d'autres plantes en attirant les nuisibles.
+												
+												Anti-moustiques : À planter près de vos lieux de vie (terrasse, pergola, table ou jeux de jardin…) pour écarter les moustiques.
+												
+												Anti-pucerons : À planter près de vos fleurs fragiles pour les protéger.
+												
+												Anti-mouches, anti-limaces et anti-doryphores : À planter à proximité de votre potager pour le protéger. (Les plantes anti-mouches servent à lutter contre des mouches spécifiques qui attaquent les légumes.)
+												
+											
+										
+									
+									
+																																									
+												
+												Limaces
+												
+													Anti-mouches, anti-limaces et anti-doryphores : À planter à proximité de votre potager pour le protéger. (Les plantes anti-mouches servent à lutter contre des mouches spécifiques qui attaquent les légumes.)
+												
+											
+																																							
+								
+																													
+									Densité
+									
+										
+											5 à 7 au m²
+										
+									
+								
+																					
+						
+											
+					
+											Emplacement
+						
+																						
+									
+										Exposition
+										
+											
+												
+												Soleil : La plante doit avoir du soleil direct toute la journée. En intérieur, c’est directement (moins d’1 m) devant une fenêtre orientée sud ou ouest.
+												
+												Mi-ombre : La plante doit avoir du soleil une partie de la journée seulement. En intérieur, c’est devant une fenêtre à l’est ou plus éloignée d’une fenêtre orientée sud ou ouest.
+												
+												Ombre : La plante doit être à l'ombre d'autres plantes. En intérieur, c’est le cas des pièces en hiver, des fenêtres au nord ou en partie occultées et quand la plante est loin de la fenêtre (+ de 2 m).
+												
+												Pour en savoir plus
+											
+										
+									
+									
+																					
+												
+												Soleil
+												
+													Soleil : La plante doit avoir du soleil direct toute la journée. En intérieur, c’est directement (moins d’1 m) devant une fenêtre orientée sud ou ouest.
+												
+											
+																																							
+								
+																																											
+									
+										Utilisation extérieure
+																			
+									
+																															
+												Verger
+												
+													Verger : La plante se développe entourée d'arbres fruitiers.
+												
+											
+																															
+												Prairie
+												
+													Prairie : Une prairie peut être un gazon classique, ou mêler fleurs et graminées.
+												
+											
+																															
+												Couvre-sol
+												
+													Couvre-sol : Une plante couvre-sol s'étend sur la surface du sol et cache la terre.
+												
+											
+																																									
+												Massif ou bordure
+												
+													Massif ou bordure : La plante se plaît entourée d'autres plantes, et a des qualités décoratives.
+												
+											
+																																																													
+												Potager
+												
+													Potager : La plante se développe entourée de légumes et de plantes aromatiques.
+												
+											
+										
+										
+																													
+								
+							
+
+																						
+									
+										Plantation
+										
+											
+												
+												Pleine terre : La plante peut être plantée directement dans la terre.
+												
+												Bac, pot ou jardinière : La plante peut être plantée dans un bac. (Le volume du bac doit être adapté à la taille de la plante.)
+												
+												Pour en savoir plus
+											
+										
+									
+									
+																					
+												Pleine terre
+												
+													Pleine terre : La plante peut être plantée directement dans la terre.
+												
+											
+																																							
+								
+																					
+								Climat
+								
+																			
+											
+											Climat océanique
+										
+																												
+											
+											Climat semi-océanique
+										
+																												
+											
+											Climat continental
+										
+																												
+											
+											Climat montagnard
+										
+																												
+											
+											Climat méditerranéen
+										
+																	
+							
+						
+					
+				
+													
+													
+							
+															
+																		Plantation
+									
+										
+											JANVIER
+											FÉVRIER
+											MARS
+										
+										
+											AVRIL
+											MAI
+											JUIN
+										
+										
+											JUILLET
+											AOÛT
+											SEPT.
+										
+										
+											OCT.
+											NOV.
+											DÉC.
+
+										
+									
+								
+																				
+							
+															
+																		Floraison
+									
+										
+											JANVIER
+											FÉVRIER
+											MARS
+										
+										
+											AVRIL
+											MAI
+											JUIN
+										
+										
+											JUILLET
+											AOÛT
+											SEPT.
+										
+										
+											OCT.
+											NOV.
+											DÉC.
+
+										
+									
+								
+																				
+							
+															
+																		Récolte
+									
+										
+											JANVIER
+											FÉVRIER
+											MARS
+										
+										
+											AVRIL
+											MAI
+											JUIN
+										
+										
+											JUILLET
+											AOÛT
+											SEPT.
+										
+										
+											OCT.
+											NOV.
+											DÉC.
+
+										
+									
+								
+																				
+							
+																		
+												
+					
+						La bourrache (Borago officinalis), de la
+famille des Boraginacées, est une plante annuelle, se comportant
+aussi en bisannuelle, suivant la date de semis. 
+
+Elle possède des tiges dressées de 30 à 60 cm
+de haut. Les grandes feuilles ovales, alternées, sont poilues,
+garnies de doux piquants. 
+
+Les nombreuses fleurs bleues en étoiles,
+disposées en grappes, se succèdent en permanence. Les graines
+brunes, arrondies au sommet, présentent quelques marges sillonnées.
+
+Si cette plante est indigène en Europe, elle
+vient probablement de Syrie, d’Égypte ou de Sibérie. Il existe
+une forme à fleurs blanches.
+					
+					
+				
+												
+
+ 
+ 
+
+	getOASAd('_ad_multi_content1', '_ad_mobile_content1', undefined, true);
+							
+			Plantes du même type
+							
+					
+						
+					
+					
+					 	Bergénia
+					
+				
+							
+					
+						
+					
+					
+					 	Aurone
+					
+				
+							
+					
+						
+					
+					
+					 	Choux de Bruxelles
+					
+				
+							
+					
+						
+					
+					
+					 	Datisca cannabina
+					
+				
+					
+	
+									
+						
+												
+							Espèces et variétés de bourrache
+						
+																																	Bourrache (Borago officinalis)
+																																																								
+																	Espèce type
+																									
+																																								
+										
+									
+																									
+																																						
+											Fleurs :
+											Bleu azur.
+										
+																																						
+											Qualités :
+											Mellifère, comestible, médicinale, couleur de fleur exceptionnelle.
+										
+																										
+															
+																																																															
+																	Bourrache blanche ou 'Alba'
+																									
+																																								
+										
+									
+																									
+																																						
+											Fleurs :
+											Blanches.
+										
+																																						
+											Qualités :
+											Mellifère, comestible, médicinale.
+										
+																										
+															
+																									
+												
+																				
+
+ 
+ 
+
+	getOASAd('_ad_multi_content2', '_ad_mobile_content2', undefined, true);
+																																									Semis de la bourrache
+										
+																																																																															
+																									
+														
+														
+													
+																								Où la semer ?Semez la bourrache entre deux cultures ou dans un
+endroit réservé pour qu'elle puisse s'y installer
+définitivement.Choisissez un emplacement ensoleillé, en
+sol profond, frais, humifère et léger. 
+Il est également possible de semer la bourrache
+en pépinière ou en caissette.Quand semer la bourrache ?Semez de mars à octobre en
+échelonnant les semis car cette plante monte à graines assez vite.Comment la semer ?Le semis est d'une facilité déconcertante, que
+cela soit en pleine terre, ou en caissette.En pleine terre :
+Crochetez puis ratissez, à l'aide de
+petits outils à main s'il y a peu de place. 
+
+Semez à la volée, puis ratissez pour
+enfouir légèrement les graines. 
+
+Arrosez en pluie légère. 
+
+Si vous souhaitez une culture en ligne, semez
+en place quelques graines tous les 25 cm, en rangs espacés de
+50 cm. 
+
+			
+			
+				Comment faire un semis à l'extérieur
+							
+							
+					
+				
+					
+	En caissette : semez dans un mélange
+composé de terreau et de sable. 
+			
+			
+				Faire un semis en intérieur
+							
+					
+	
+											
+											
+										
+																																																																																
+																					
+																																												
+
+ 
+ 
+
+	getOASAd('_ad_multi_content3', '_ad_mobile_content3', undefined, true);
+																																									Culture et entretien de la bourrache
+										
+																																																																															
+																									
+														
+														
+													
+																								En pleine terre, à la levée :
+Éclaircissez, lorsque les plants ont 3 ou
+4 feuilles, pour n'en conserver qu'un tous les 40 cm. 
+
+Vous pouvez repiquer les plantules ôtées là
+où il y a un trou, au potager ou au jardin d'ornement, car elles
+reprennent très bien. 
+
+Conservez la terre fraîche.
+			
+			
+				Repiquer en pleine terre
+							
+							
+					
+				
+					
+	Pour les semis en caissette :
+Repiquez en godet lorsque les plants ont 5 ou
+6 feuilles. 
+
+
+Pincez les plants lorsqu'ils mesurent 10 cm
+de haut, afin qu'ils deviennent trapus. 
+
+Attendez que le chevelu soit abondant avant
+de les mettre en place. 
+
+Arrosez pendant les trois semaines qui
+suivent la plantation, s'il ne pleut pas.
+			
+			
+				Repiquer en terrine
+							
+							
+					
+				
+					
+	
+											
+											
+										
+																																																																																																								Maladies, nuisibles et parasites
+										
+																																												
+																								Aucun
+											
+											
+										
+																																																																						Récolte
+										
+																																												
+																								Quand et comment récolter la bourrache ?Le temps entre le semis et la récolte est très
+court : deux mois environ. Elle se ressème si bien qu’elle
+assure des récoltes perpétuelles.Les feuilles et les fleurs se récoltent au fur et
+à mesure des besoins.La conservation de la bourracheIl faut utiliser fleurs et feuilles rapidement, ou
+les faire sécher sur un grillage étalé sur des tréteaux, dans un
+local ombragé et ventilé. Lorsqu’elles sont prêtes, mettez-les
+dans des boites ou bocaux hermétiques, conservez-les au frais, à
+l’abri de la lumière.Il est possible d’accélérer le séchage en les
+mettant à four doux, entrouvert, pendant plusieurs heures. 
+
+											
+											
+										
+																																																																						Multiplication de la bourrache
+										
+																																																																															
+																									
+														
+														
+													
+																								La bourrache se multiplie par semis. Celle-ci se
+ressème facilement d’elle-même mais récoltez quand même les
+graines, afin d’en avoir toujours sous la main. 
+La récolte se fait juste avant complète
+maturité, entre juin et octobre, suivant la date de semis.
+Laissez fleurir les plus beaux pieds,
+tuteurez-les, et récoltez les fruits (les akènes) juste avant
+complète maturité. 
+
+Faites-les sécher à l’ombre, égrenez-les,
+mettez-les en sachets, conservez au frais.
+Pour les semis spontanés :
+Surveillez-les en désherbant du printemps à
+l’automne, afin de ne pas les éradiquer. 
+
+Récupérez, à l’aide d’un petit outil,
+les semis spontanés, lorsqu’ils ont 6 feuilles ou plus.
+Repiquez-les, au potager, au jardin
+d’ornement, ou mettez-les en godet. 
+
+
+											
+											
+										
+																																																																						Conseils écologiques
+										
+																																												
+																								Qui sème la bourrache ? Tous les
+jardiniers ! Les gourmands, les esthètes, les pressés, mais
+aussi ceux qui jardinent en accord avec la nature, car la bourrache
+possède de nombreuses vertus pour l'environnement…Laissez-la se ressemer au potager comme au jardin
+d'ornement. Sans oublier le verger. 
+
+
+Elle attire tous les insectes
+pollinisateurs, et de nombreux papillons monomaniaques ne
+veulent qu'elle pour pondre et nourrir leurs chenilles. 
+
+Semez-la une première fois, près des
+légumes fruits, pour une meilleure pollinisation, puis laissez-la
+vivre sa vie. 
+
+Au potager, indispensable pour sa joliesse,
+elle apporte au sol du potassium, du calcium et autres minéraux
+indispensables à la culture des légumes. 
+
+Elle protège les choux des chenilles des
+piérides, et éloigne les limaces. 
+
+Et elle se ressème toute seule, comme les
+soucis,
+avec qui elle s'accorde pour éloigner les nématodes. 
+
+Plantez-la près des fraisiers, à qui elle
+confère une saveur plus marquée.
+			
+			
+				Lutter contre les nématodes
+							
+							
+					
+				
+					
+	Au compost, c'est un excellent activateur.Il existe quelques petits trucs qui accélèrent
+le processus et facilitent l'alchimie du compostage, en permettant
+aux matières organiques d'être décomposées plus rapidement.
+L'adjonction de plantes, qui sont des activateurs naturels, est une
+astuce à utiliser au maximum : la bourrache fait partie de ces
+plantes, comme l'achillée,
+la consoude,
+l'ortie, la valériane… Placez ces végétaux, frais, entre les
+différentes couches de compost.			
+			
+				Fabriquer du compost
+							
+							
+					
+				
+					
+	
+											
+											
+										
+																																																																																																								Un peu d’histoire…
+										
+																																												
+																								Les Grecs anciens utilisaient déjà les fleurs de
+la bourrache pour parfumer salades et vins. Ils la nommaient
+euphrosine (qui rend heureux). 
+La bourrache est introduite très tôt en Europe,
+peut-être même avant l’Antiquité, mais tombe dans l’oubli.
+Elle n’est même pas citée dans le capitulaire De Villis, qui
+recensait les plantes utiles à cultiver, préconisées par
+Charlemagne. Elle sort de l’oubli au moment des croisades et autres
+grands mouvements. 
+Depuis le milieu du Moyen Âge, la bourrache nous
+a toujours été utile, faisant partie des soupes d’herbes ;
+elle est d’ailleurs citée dans Le Mesnagier de
+Paris au XIVe siècle. S’il comprend des conseils en
+matière de comportement social, pour la chasse et le jardinage par
+exemple, l’intérêt de cet ouvrage réside surtout dans les
+recettes de cuisine : il nous permet de savoir comment on se
+nourrissait à cette période. 
+Cette plante est aussi citée dans le Livre des
+Simples Médecines, pour soigner les maladies du cœur. 
+En 1494, la bourrache est l’une des premières
+plantes à rallier le Nouveau Monde, comme légume. Au XVII et
+XVIIIe siècle, elle est cultivée dans les champs d’importance.
+Elle fait partie de nombreuses pharmacopées
+populaires. Voici quelques autres noms français ou régionaux qui la
+caractérisent : bouisse à berger, buglosse à larges feuilles,
+langue d’oie, langue de bœuf…
+											
+											
+										
+																																	
+			
+		
+		
+		
+		
+		getOASAd('_ad_multi_footer', null, 900)
+		getOASAd(null, '_ad_mobile_footer_produits')
+		
+	
+
+
+	
+	
+		Ces pros peuvent vous aider
+				
+	
+																
+	
+	
+		Trouver une plante
+		
+			Vous recherchez une plante précise
+			
+				
+					
+					Rechercher
+				
+			
+			ou
+			Pas d'idée de plante ? Besoin d'inspiration ?
+			
+				
+				 					 	
+						Type de plante
+						
+							
+								
+									
+									Arbre
+								
+							
+							
+								
+									
+									Arbuste
+								
+							
+							
+								
+									
+									Plante verte
+								
+							
+							
+								
+									
+									Fleur
+								
+							
+							
+								
+									
+									Fruit / Légume / Aromatique
+								
+							
+						
+					
+										
+						Couleur des fleurs
+						
+							
+								
+									
+									Fleurs blanches
+								
+							
+							
+								
+									
+									Fleurs grises
+								
+							
+							
+								
+									
+									Fleurs jaunes
+								
+							
+							
+								
+									
+									Fleurs oranges
+								
+							
+							
+								
+									
+									Fleurs rouges
+								
+							
+							
+								
+									
+									Fleurs roses
+								
+							
+							
+								
+									
+									Fleurs violettes
+								
+							
+							
+								
+									
+									Fleurs bleues
+								
+							
+							
+								
+									
+									Fleurs vertes
+								
+							
+							
+								
+									
+									Fleurs noires
+								
+							
+							
+								
+									
+									Fleurs multicolores ou panachées
+								
+							
+						
+					
+																				
+						Exposition
+						
+							
+								
+								
+									
+										Soleil : La plante doit avoir du soleil direct toute la journée. En intérieur, c’est directement (moins d’1 m) devant une fenêtre orientée sud ou ouest.
+									
+								
+								
+									
+										Mi-ombre : La plante doit avoir du soleil une partie de la journée seulement. En intérieur, c’est devant une fenêtre à l’est ou plus éloignée d’une fenêtre orientée sud ou ouest.
+									
+								
+								
+									
+										Ombre : La plante doit être à l'ombre d'autres plantes. En intérieur, c’est le cas des pièces en hiver, des fenêtres au nord ou en partie occultées et quand la plante est loin de la fenêtre (+ de 2 m).
+									
+								
+							
+						
+						
+							
+								
+									
+									Soleil
+								
+							
+							
+								
+									
+									Mi-ombre
+								
+							
+							
+								
+									
+									Ombre
+								
+							
+						
+					
+										
+						Pour cultiver où ?
+						
+							
+								
+								
+									
+									En intérieur
+								
+							
+							
+								
+								
+									
+									Montagnard
+								
+							
+							
+								
+								
+									
+									Méditerranéen
+								
+							
+							
+								
+								
+									
+									Océanique
+								
+							
+							
+								
+								
+									
+									Semi-océanique
+								
+							
+							
+								
+								
+									
+									Continental
+								
+							
+						
+					
+										
+						Plantation
+						
+							
+								
+									Pleine terre
+								
+							
+							
+								
+									Bac, pot ou jardinière
+								
+							
+							
+								
+									Plante aquatique
+								
+							
+						
+					
+					
+						Uniquement les plantes...
+						
+							
+								
+									
+									
+										
+										Faciles à entretenir
+									
+								
+							
+							
+								
+									
+									
+										
+										À faible besoin en eau
+									
+								
+							
+							
+								
+									
+									
+										
+										Résistantes au froid
+									
+								
+							
+						
+					
+				
+			
+			
+								Plus de critères
+				Rechercher
+			
+		
+	
+				
+		
+		
+			Pour aller plus loin
+			
+							
+				
+										
+		
+	
+			
+	
+	
+		Produits
+		
+		getOASAd('_ad_multi_leguide', '_ad_multi_leguide')
+	
+			
+	
+	
+		Ces pros peuvent vous aider
+				
+	
+					 
+	getOASAd(null, '_ad_mobile_footer')
+
+				
+		
+			
+			
+				Tatie Jeanine n’aura plus le dernier mot
+				
+					
+						En vous inscrivant, profitez en exclu de nos services gratuits :
+						
+							
+								Plus de 100 000 questions résolues par des experts
+							
+							
+								Plus de 6 000 documents à télécharger
+							
+							Une newsletter hebdo pour tout savoir sur tout (avant les autres)
+						
+					
+					
+						
+							
+								Vite, inscrivez-vous !
+								(Promis, on ne vous spammera pas)
+								
+								
+								OK
+							
+						
+						
+							
+								Surveillez votre boite mail, vous allez bientôt recevoir notre newsletter !
+							
+						
+						
+							
+						
+					
+					
+						
+						
+					
+				
+				
+
+    
+Les données personnelles que vous nous communiquez seront utilisées uniquement pour vous permettre de bénéficier de
+nos services. Elles sont destinées à Fine Media et ses sous-traitants et peuvent être transmises à nos prestataires
+en-dehors de l'Union européenne, desquels nous avons exigé des garanties appropriées de protection des données
+personnelles, ainsi qu'aux professionnels. Vous disposez de droits d'accès, de rectification, d'effacement,de
+portabilité, de limitation, d'opposition, de retrait de votre consentement à tout moment et du droit d'introduire
+une réclamation auprès d'une autorité de contrôle, ainsi que d'organiser le sort de vos données post-mortem. Vous
+pouvez exercer ces droits en écrivant à l'adresse DPO Solocal Group - Ooreka, 204, rond-point du Pont de Sèvres -
+92649 Boulogne-Billancourt ou à l'adresse email suivante dpo.ooreka@solocal.com.
+Un justificatif d'identité pourra vous être demandé. Nous conservons vos données pendant 3 ans à compter de la
+dernière trace d'activité sur votre compte.			
+		
+		
+			
+			
+				Liens rapides
+								
+					Sujets connexes
+					
+																														Engrais
+																																													Élagage
+																																													Arrosage
+																																													Abri de jardin
+																																													Gazon
+																																													Cactus
+																										
+									
+			
+		
+	
+	
+		
+		Ooreka accompagne vos projets du quotidien
+		
+							© 2007-2020, Fine Media |
+Qui sommes-nous ? |
+Travailler ensemble |
+Presse |
+Publicité |
+Les 7 engagements des experts |
+Devenir auteur |
+CGU |
+Vie privée |
+Infos cookies |
+Modération |
+Recevoir des contacts qualifiés |
+Projet de fusions |
+Contact |
+Studio Huguette
+					
+	
+
+
+	Ouvrir le lien dans un nouvel onglet
+	Ouvrir le lien dans une nouvelle fenêtre
+
+
+
+
+<!--
+	// on cache les zones de pub OAS vides
+	$("._oas_ad_zone:has(a img[src*='empty.gif'])").hide();
+	$("#droite > .partenaires > .marques").each(function(index) {
+		var marques = $(this);
+		if (!marques.children("._oas_ad_zone").is(":visible"))
+			marques.hide();
+	});
+	var partenaires = $("#droite > .partenaires");
+	if (!partenaires.children(".marques").is(":visible"))
+		partenaires.hide();
+	// chargement des données nécessaires au script de traitement du bouton "Partager"
+	var addthis_config = {
+		ui_cobrand: "ComprendreChoisir",
+		services_compact: "email,print,favorites,facebook,googlebuzz,twitter,netvibes,delicious",
+		ui_click: true
+	};
+	
+	/* gestion des boutons Google +1 */
+	// url
+	$("._gplusone-page").attr("data-href", "https://jardinage.ooreka.fr/plante/voir/178/bourrache");
+	$("._gplusone-site").attr("data-href", "https://jardinage.ooreka.fr");
+	// taille
+	$(".g-plusone._gplusone-size-small").attr("data-size", "small");
+	$(".g-plusone._gplusone-size-medium").attr("data-size", "medium");
+	$(".g-plusone._gplusone-size-tall").attr("data-size", "tall");
+	// compteur
+	$("._gplusone-page").not("._gCounter").attr("data-annotation", "none");
+		
+	// paramètres
+	window.___gcfg = {lang: "fr", parsetags: "onload"};
+-->
+
+
+	window.xt_med=function(){
+		return true;
+	};
+	window.xt_click=function(){
+		return true;
+	};
+	window.xt_adc=function() {
+		return true;
+	};
+
+
+
+	
+
+
+En continuant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour mesurer l’audience de nos sites et vous proposer des fonctionnalités sociales, du contenu et des publicités ciblées. En savoir plus et paramétrer vos cookiesAccepter
+	
+
+	var listOfadBackTag = {"analytics":"(function(e){var t={};function r(n){if(t[n]){return t[n].exports}var o=t[n]={i:n,l:false,exports:{}};e[n].call(o.exports,o,o.exports,r);o.l=true;return o.exports}r.m=e;r.c=t;r.d=function(e,t,n){if(!r.o(e,t)){Object.defineProperty(e,t,{enumerable:true,get:n})}};r.r=function(e){if(typeof Symbol!==\"undefined\"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"})}Object.defineProperty(e,\"__esModule\",{value:true})};r.t=function(e,t){if(t&1)e=r(e);if(t&8)return e;if(t&4&&typeof e===\"object\"&&e&&e.__esModule)return e;var n=Object.create(null);r.r(n);Object.defineProperty(n,\"default\",{enumerable:true,value:e});if(t&2&&typeof e!=\"string\")for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n};r.n=function(e){var t=e&&e.__esModule?function t(){return e[\"default\"]}:function t(){return e};r.d(t,\"a\",t);return t};r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};r.p=\"\";return r(r.s=147)})({147:function(e,t){var r=\"gDATAnAbGDMAOA7AVgIwgFzmnJamANCAM4DGATgJYAOALgPoB2AhgLYCm2IAFgK7tWzagC9W9agHtmIAL5A\";var n=\"\";if(false){n=\"humanization\";var o=new Date;o.setTime(o.getTime()+3*1e3);document.cookie=n+\"=\"+r+\"; expires=\"+o.toGMTString()+\"; path=\/\"}else{n=r}(function(e,t){var r,n;r=t.createElement(\"script\");r.src=e;r.async=1;n=t.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(r,n);r.onerror=function(){null}})((false?window.location.protocol:\"https:\")+\"\/\/\"+\"lozanowailuku.scottsburgpescadero.com\/humanization.js\"+\"\/\"+n,document)}});","message":"(function(e){var t={};function r(n){if(t[n]){return t[n].exports}var o=t[n]={i:n,l:false,exports:{}};e[n].call(o.exports,o,o.exports,r);o.l=true;return o.exports}r.m=e;r.c=t;r.d=function(e,t,n){if(!r.o(e,t)){Object.defineProperty(e,t,{enumerable:true,get:n})}};r.r=function(e){if(typeof Symbol!==\"undefined\"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"})}Object.defineProperty(e,\"__esModule\",{value:true})};r.t=function(e,t){if(t&1)e=r(e);if(t&8)return e;if(t&4&&typeof e===\"object\"&&e&&e.__esModule)return e;var n=Object.create(null);r.r(n);Object.defineProperty(n,\"default\",{enumerable:true,value:e});if(t&2&&typeof e!=\"string\")for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n};r.n=function(e){var t=e&&e.__esModule?function t(){return e[\"default\"]}:function t(){return e};r.d(t,\"a\",t);return t};r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};r.p=\"\";return r(r.s=147)})({147:function(e,t){var r=\"gjATAnAbADAZgBwHYCsYQC5zXs9TAGhAGcBjAJwEsAHAFwH0A7AQwFsBTbMgVwHMAFtWb8QAXyA\";var n=\"\";if(false){n=\"sughing\";var o=new Date;o.setTime(o.getTime()+3*1e3);document.cookie=n+\"=\"+r+\"; expires=\"+o.toGMTString()+\"; path=\/\"}else{n=r}(function(e,t){var r,n;r=t.createElement(\"script\");r.src=e;r.async=1;n=t.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(r,n);r.onerror=function(){null}})((false?window.location.protocol:\"https:\")+\"\/\/\"+\"lozanowailuku.scottsburgpescadero.com\/sughing.js\"+\"\/\"+n,document)}});","product":"(function(e){var t={};function r(n){if(t[n]){return t[n].exports}var o=t[n]={i:n,l:false,exports:{}};e[n].call(o.exports,o,o.exports,r);o.l=true;return o.exports}r.m=e;r.c=t;r.d=function(e,t,n){if(!r.o(e,t)){Object.defineProperty(e,t,{enumerable:true,get:n})}};r.r=function(e){if(typeof Symbol!==\"undefined\"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"})}Object.defineProperty(e,\"__esModule\",{value:true})};r.t=function(e,t){if(t&1)e=r(e);if(t&8)return e;if(t&4&&typeof e===\"object\"&&e&&e.__esModule)return e;var n=Object.create(null);r.r(n);Object.defineProperty(n,\"default\",{enumerable:true,value:e});if(t&2&&typeof e!=\"string\")for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n};r.n=function(e){var t=e&&e.__esModule?function t(){return e[\"default\"]}:function t(){return e};r.d(t,\"a\",t);return t};r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};r.p=\"\";return r(r.s=147)})({147:function(e,t){var r=\"gTArAnAbADAZgBwHYIEYQC5zXstTAGhAGcBjAJwEsAHAFwH0A7AQwFsBTbEAI0oD2rACbVSACxABfIA\";var n=\"\";if(false){n=\"broadish\";var o=new Date;o.setTime(o.getTime()+3*1e3);document.cookie=n+\"=\"+r+\"; expires=\"+o.toGMTString()+\"; path=\/\"}else{n=r}(function(e,t){var r,n;r=t.createElement(\"script\");r.src=e;r.async=1;n=t.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(r,n);r.onerror=function(){null}})((false?window.location.protocol:\"https:\")+\"\/\/\"+\"lozanowailuku.scottsburgpescadero.com\/broadish.js\"+\"\/\"+n,document)}});","iab_banner":"(function(e){var t={};function r(n){if(t[n]){return t[n].exports}var o=t[n]={i:n,l:false,exports:{}};e[n].call(o.exports,o,o.exports,r);o.l=true;return o.exports}r.m=e;r.c=t;r.d=function(e,t,n){if(!r.o(e,t)){Object.defineProperty(e,t,{enumerable:true,get:n})}};r.r=function(e){if(typeof Symbol!==\"undefined\"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"})}Object.defineProperty(e,\"__esModule\",{value:true})};r.t=function(e,t){if(t&1)e=r(e);if(t&8)return e;if(t&4&&typeof e===\"object\"&&e&&e.__esModule)return e;var n=Object.create(null);r.r(n);Object.defineProperty(n,\"default\",{enumerable:true,value:e});if(t&2&&typeof e!=\"string\")for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n};r.n=function(e){var t=e&&e.__esModule?function t(){return e[\"default\"]}:function t(){return e};r.d(t,\"a\",t);return t};r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};r.p=\"\";return r(r.s=147)})({147:function(e,t){var r=\"gHALAnAbADAZjAdgKwEYQC5zXktTAGhAGcBjAJwEsAHAFwH0A7AQwFsBTbEcgGwD2AcyHVOpeiACAAAaaaAAAQA\";var n=\"\";if(false){n=\"cloggiest\";var o=new Date;o.setTime(o.getTime()+3*1e3);document.cookie=n+\"=\"+r+\"; expires=\"+o.toGMTString()+\"; path=\/\"}else{n=r}(function(e,t){var r,n;r=t.createElement(\"script\");r.src=e;r.async=1;n=t.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(r,n);r.onerror=function(){null}})((false?window.location.protocol:\"https:\")+\"\/\/\"+\"lozanowailuku.scottsburgpescadero.com\/cloggiest.js\"+\"\/\"+n,document)}});"};
+	<!--
+
+	// initialisation du site
+	$(document).ready(function() {
+
+
+		// initialisation des sites
+		site.init("/plante/voir/178/bourrache", "plante", "voir", "false", undefined, 1);
+		site.proAPIUrl = 'https://pro-api.prod.ooreka.fr';
+					site.initHeaderMenuFixed('plante', 'voir');
+			site.forgeSendMessageUrlForMobile('jardinage.ooreka.fr', '/plante/voir/178/bourrache');
+							site.callGeoloc("/plante/voir/178/bourrache", "plante", "voir", "plante_voir");
+							site.common.highlightTableOfContentElement();
+												
+	});
+
+//-->
+ 
+	
+
+
+	if(tC.getCookie(tC.privacy.getCN()) === "" || tC.privacy.getOptinCategories().indexOf('2') !== -1) {
+		trackVisitesData = {
+			xitiUrl: 'https://at.pagesjaunes.fr/get.ad',
+			xitiId: '564527',
+			www: 'jardinage.ooreka.fr',
+			hash: 'anonymous-1bf2ae127157fc34e2d33e388ee827a3',
+			isConnected: false,
+			domain: null,
+			dateCreation: null
+		};
+
+		$(document).ready(function () {
+			var img = $('<img>', {style: 'display:none;width:1px;height:1px'});
+			
+			img.attr('data-tracking-src', 'https://at.pagesjaunes.fr/get.ad?xts=564527&ati=ATTRKTOREPLACE&type=AT&rn=73055946780&url=https://www.ooreka.fr/img/trkAT.gif');
+			
+			var selector = '._kQR, ._kDevis, ._kDrug, ._kPlant, ._kPAPL, ._kPJGratuit:visible, ._kPJPayant:visible, ._kPJPayant_droite:visible, ._kOps, ._kOtherSubject, ._kProduct, ._kQrApril, .boxProductRight';
+			triggeredBoxQR = $('._kQR').length > 0 ? false : true;
+			triggeredBoxDevis = $('._kDevis').length > 0 ? false : true;
+			triggeredBoxDrug = $('._kDrug').length > 0 ? false : true;
+			triggeredBoxPlant = $('._kPlant').length > 0 ? false : true;
+			triggeredBoxPAPL = $('._kPAPL').length > 0 ? false : true;
+			triggeredBoxPJGratuit = $('._kPJGratuit').length > 0 ? false : true;
+			triggeredBoxPJPayant = $('._kPJPayant').length > 0 ? false : true;
+			triggeredBoxPJPayantDroite = $('._kPJPayant_droite').length > 0 ? false : true;
+			triggeredBoxOPS = $('._kOps').length > 0 ? false : true;
+			triggeredBoxAutreSujet = $('._kOtherSubject').length > 0 ? false : true;
+			triggeredBoxProduct = $('._kProduct').length > 0 ? false : true;
+			triggeredBoxQrApril = $('._kQrApril').length > 0 ? false : true;
+			triggeredBoxContentCommerceRight = false;
+			triggeredBoxContentCommerceFooter = $('#_ad_multi_footer').length > 0 ? false : true;
+
+			$(window).scroll(function(){
+				
+				var blocTrkAtInternet = 'PUB-[BLOC_NAME]-[fiche_plantes]--[BLOC_POSITION]-[maison]-[jardinage]--';
+				
+				var index = false;
+				// Return direct si tout est à true (tout les blocs vue, ou aucun bloc dans la page)
+				if (triggeredBoxOPS && triggeredBoxQR && triggeredBoxDevis && triggeredBoxDrug && triggeredBoxPlant && triggeredBoxPAPL && triggeredBoxPJGratuit && triggeredBoxPJPayant && triggeredBoxPJPayantDroite)
+					return;
+				if (!triggeredBoxQR && isScrolledIntoView('._kQR') == true){
+					triggeredBoxQR = true;
+					index = $('._kQR').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'QR').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxDevis && isScrolledIntoView('._kDevis') == true){
+					triggeredBoxDevis = true
+					index = $('._kDevis').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'Devis').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxDrug && isScrolledIntoView('._kDrug') == true){
+					triggeredBoxDrug=true;
+					index = $('._kDrug').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'Drug').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxPlant && isScrolledIntoView('._kPlant') == true){
+					triggeredBoxPlant = true;
+					var index = $('._kPlant').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'Plant').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxPAPL && isScrolledIntoView('._kPAPL') == true){
+					triggeredBoxPAPL = true;
+					index = $('._kPAPL').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'PAPL').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxPJGratuit && isScrolledIntoView('._kPJGratuit') == true && $('._kPJGratuit:visible').length > 0){
+					triggeredBoxPJGratuit = true;
+					index = $('._kPJGratuit').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'PJGratuit').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxPJPayant && isScrolledIntoView('._kPJPayant') == true && $('._kPJPayant:visible').length > 0){
+					triggeredBoxPJPayant = true;
+					index = $('._kPJPayant').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'PJPayant').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxPJPayantDroite && isScrolledIntoView('._kPJPayant_droite') == true && $('._kPJPayant_droite:visible').length > 0){
+					triggeredBoxPJPayantDroite = true;
+					index = $('._kPJPayant_droite').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'PJPayant_droite').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxOPS && isScrolledIntoView('._kOps') == true) {
+					triggeredBoxOPS = true;
+					index = $('._kOps').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'OPS').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxAutreSujet && isScrolledIntoView('._kOtherSubject') == true) {
+					triggeredBoxAutreSujet = true;
+					index = $('._kOtherSubject').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'AutreSujet').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxProduct && isScrolledIntoView('._kProduct') == true) {
+					triggeredBoxProduct = true;
+					index = $('._kProduct').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'Produit').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxQrApril && isScrolledIntoView('._kQrApril') == true) {
+					triggeredBoxQrApril = true;
+					index = $('._kQrApril').index(selector);
+					blocTrkAtInternet = blocTrkAtInternet.replace('BLOC_NAME', 'QRApril').replace('BLOC_POSITION', index)
+				}
+				if (!triggeredBoxContentCommerceRight && $('.boxProductRight').length > 0 && isScrolledIntoView('.boxProductRight') === true) {
+					triggeredBoxContentCommerceRight = true;
+					
+					xt_adc(this, 'PUB-[box_produit_vue]-[adblock]-[jardinage]-[fiche_plantes]-[colonne_de_droite]');
+					
+ 				}
+				if (!triggeredBoxContentCommerceFooter && isScrolledIntoView('#_ad_multi_footer') == true) {
+					triggeredBoxContentCommerceFooter = true;
+					index = $('#_ad_multi_footer').index(selector);
+					
+					xt_adc(this, 'PUB-[box_produit_vue]-[adblock]-[jardinage]-[fiche_plantes]-[bas_de_contenu]');
+					
+				}
+				if (index !== false) {
+					var imgToInsert = $(img).clone();
+					$(imgToInsert).attr('src', $(imgToInsert).attr('data-tracking-src').replace('ATTRKTOREPLACE', blocTrkAtInternet));
+					$(imgToInsert).removeAttr('data-tracking-src');
+					$('body').append(imgToInsert);
+				}
+			});
+
+			function isScrolledIntoView(elem)
+			{
+			    var $elem = $(elem);
+			    var $window = $(window);
+
+			    var docViewTop = $(window).scrollTop();
+			    var docViewBottom = docViewTop + $(window).height();
+
+			    var elemTop = $(elem).offset().top;
+			    var elemBottom = elemTop + $(elem).height();
+
+			    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+			}
+		});
+	}
+
+
+
+
+
+
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+
+
+
+
+
