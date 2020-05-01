@@ -36,6 +36,7 @@ async function addVegetable() {
   console.log("--> name ?");
   this.name = await this.userInput();
 
+
   console.log("--> exposition ?");
   this.exposition = await this.userInput();
 
@@ -112,12 +113,7 @@ async function messageLog(logValue) {
   return null;
 }
 
-function takeInput(callback) {
-  rl.on("line", (input) => {
-    // console.log(`input : ${inp²²ut}`);
-    callback(input);
-  });
-}
+
 
 module.exports = {
   visualInterface: visualInterface,
