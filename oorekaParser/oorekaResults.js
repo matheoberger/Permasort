@@ -1,2 +1,1 @@
-const http = require("http");
-const https = require("https");
+const get = require(".libhttps.js");
