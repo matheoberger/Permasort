@@ -21,7 +21,7 @@ function visualInterface() {
 
 function userInput() {
   return new Promise((response) => {
-    takeInput((input) => {
+    rl.on("line", (input) => {
       response(input);
     });
   });
@@ -113,10 +113,7 @@ async function messageLog(logValue) {
 }
 
 function takeInput(callback) {
-  rl.on("line", (input) => {
-    // console.log(`input : ${inp²²ut}`);
-    callback(input);
-  });
+
 }
 
 module.exports = {
