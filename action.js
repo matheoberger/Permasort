@@ -1,5 +1,4 @@
 var menu = require("./menu");
-const split = require("split-string");
 const util = require("util");
 
 class Vegetable {
