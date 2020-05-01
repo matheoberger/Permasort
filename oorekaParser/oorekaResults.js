@@ -2,53 +2,37 @@ const { scrap } = require("../lib/https.js");
 const htmlparser2 = require("htmlparser2");
 const util = require("util");
 
-// async function loadpage() {
-//   const result = await get(
-//     "https://jardinage.ooreka.fr/plante/recherche?motsClefs=bourrache"
-//   );
-//   console.log(`result of LoadPage  ${result}`);
-//   //   const parse = new Promise(async (resolve) => {});
-//   return null;
-// }
+// var vegetable = "persil";
+var path;
 
-const parser = new htmlparser2.Parser(
-  {
-    onopentag(name, attribs) {
-      if (name === "script" && attribs.type === "text/javascript") {
-        console.log(`tage is : ${name},${util.inspect(attribs)}`);
-      }
+async function load(vegetable) {
+  const parser = new htmlparser2.Parser(
+    {
+      // const regex = persil$;
+      onopentag(name, attribs) {
+        if (
+          name === "a" &&
+          attribs.class === "titre_liste_plante" &&
+          attribs.href.match(`${vegetable}$`)
+        ) {
+          // console.log(`https://jardinage.ooreka.fr${attribs.href}`);
+          path = `https://jardinage.ooreka.fr${attribs.href}`;
+        }
+      },
     },
-    ontext(text) {
-      console.log("-->", text);
-    },
-    onclosetag(tagname) {
-      if (tagname === "script") {
-        console.log("That's it?!");
-      }
-    },
-  },
-  { decodeEntities: true }
-);
-
-function filterItems(arr, query) {
-  return arr.filter(
-    (el) => el.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    { decodeEntities: true }
   );
-}
 
-async function test() {
   console.clear();
   var result = parser.write(
     await scrap(
-      "https://jardinage.ooreka.fr/plante/recherche?motsClefs=bourrache"
+      `https://jardinage.ooreka.fr/plante/recherche?motsClefs=${vegetable}`
     )
   );
-
-  //   console.log(filterItems(result, "bourrache"));
-  console.log(result);
   parser.end();
-  console.log("coucou");
+  return path;
 }
 
-// loadpage();
-test();
+module.exports = {
+  load: load,
+};
