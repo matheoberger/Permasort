@@ -35,10 +35,16 @@ async function loadDataFromPage(URL) {
         // if (text.match("sol+[a-z ]{8}")) {
         //   console.log(text);
         // }
-        if (text.match(/[0-9]+[\S ]+[0-9]+[\S ]+(m²)/)) {
+        if (
+          text.match(
+            /[0-9]{1,3}[ a-z\/]{1,8}[2²]|[0-9]{1,3}( à )[0-9]{1,3}[ a-z\/]{1,8}[2²]/
+          )
+        ) {
           var parseDensity = [];
           parseDensity = text
-            .match(/[0-9]+[\S ]+[0-9]+[\S ]+(m²)/)[0]
+            .match(
+              /[0-9]{1,3}[ a-z\/]{1,8}[2²]|[0-9]{1,3}( à )[0-9]{1,3}[ a-z\/]{1,8}[2²]/
+            )[0]
             .match(/[0-9,]+/g);
           density.push(parseDensity);
         }
