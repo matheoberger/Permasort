@@ -1,11 +1,21 @@
 const oorekaResults = require("./oorekaResults");
 const oorekaVegetableParser = require("./oorekaVegetableParser");
+// var system = require("system");
 
-async function loadData(vegetable) {
+var vegetable;
+
+async function loadData() {
+  vegetable = process.argv[2];
+  // console.log(vegetable);
   const vegetableURL = await oorekaResults.load(vegetable);
   var results = await oorekaVegetableParser.loadDataFromPage(vegetableURL);
+  return new Promise((response) => {
+    console.log(results);
+    response(results);
+  });
 }
+loadData();
 
-loadData("carotte");
-
-module.exports = {};
+module.exports = {
+  loadData: loadData,
+};
