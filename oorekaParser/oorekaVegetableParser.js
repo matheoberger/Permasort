@@ -8,6 +8,8 @@ async function loadDataFromPage(URL) {
   var sizeType = [];
   var size = [];
   var density = [];
+  var parseDensity = [];
+
   const parser = new htmlparser2.Parser(
     {
       onopentag(name, attribs) {
@@ -31,35 +33,34 @@ async function loadDataFromPage(URL) {
         }
       },
       ontext(text) {
-        // console.log(text);
+        const densityRegex =
+          "[0-9]{1,3}[ a-z/]{1,8}[2²]|[0-9]{1,3}( à )[0-9]{1,3}[ a-z/]{1,8}[2²]";
+        const sizeRegex = "[0-9,]+( à )[0-9,]+( m)";
+        const HeightWidthRegex = "(Largeur)|(Hauteur)";
+        const extractNumbersRegex = /[0-9,]+/g;
+
         // if (text.match("sol+[a-z ]{8}")) {
         //   console.log(text);
         // }
-        if (
-          text.match(
-            /[0-9]{1,3}[ a-z\/]{1,8}[2²]|[0-9]{1,3}( à )[0-9]{1,3}[ a-z\/]{1,8}[2²]/
-          )
-        ) {
-          var parseDensity = [];
-          parseDensity = text
-            .match(
-              /[0-9]{1,3}[ a-z\/]{1,8}[2²]|[0-9]{1,3}( à )[0-9]{1,3}[ a-z\/]{1,8}[2²]/
-            )[0]
-            .match(/[0-9,]+/g);
-          density.push(parseDensity);
+
+        console.log(text);
+
+        if (text.match(densityRegex)) {
+          parseDensity = text.match(densityRegex);
+          density = parseDensity;
         }
         if (text.match("(Largeur)|(Hauteur)")) {
           sizeType.push(
             text
-              .match("(Largeur)|(Hauteur)")[0]
+              .match(HeightWidthRegex)[0]
               .replace("Largeur", "width")
               .replace("Hauteur", "height")
           );
         }
-        if (text.match("[0-9,]+( à )[0-9,]+( m)")) {
+        if (text.match(sizeRegex)) {
           var parseUnknowSize = text
-            .match(/[0-9,]+( à )[0-9,]+( m)/)[0]
-            .match(/[0-9,]+/g);
+            .match(sizeRegex)[0]
+            .match(extractNumbersRegex);
           size.push(parseUnknowSize);
           // console.log(size);
         }
@@ -79,10 +80,12 @@ async function loadDataFromPage(URL) {
     await coucou.then(() => {
       this.width = [];
       this.height = [];
-      this.density = [];
+      this.density;
       this.waterNeed = waterNeed;
       this.exposition = exposition;
       this.density = density;
+      console.log(`parseDensity: ${parseDensity}`);
+
       if (sizeType[0].includes("height")) {
         this.height.push(size[0]);
         this.width.push(size[1]);
