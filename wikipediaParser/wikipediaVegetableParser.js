@@ -170,11 +170,12 @@ async function parseDataToRawFamily(webElement, step) {
       parser.write(webElement);
       console.log(" closing parser");
       parser.end();
-      console.log(allText);
+      // console.log(allText);
       allText = allText.replace(/(\\u00e9)/g, "é");
       if (allText.match(familyRegex)) {
         console.log(" MATCHED !");
-        console.log(allText.match(familyRegex));
+        // console.log(allText.match(familyRegex));
+        family = allText.match(familyRegex)[1];
       }
       break;
     default:
@@ -258,7 +259,7 @@ async function ParseFamilies() {
   return;
 }
 
-loadControler("carotte").then((data) => {
+loadControler("courgette").then((data) => {
   console.log("--> " + data);
 });
 
