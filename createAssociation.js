@@ -1,9 +1,16 @@
-const fs = require("fs");
+const {
+  getAssociations,
+  modifyAssociation,
+  appendObject,
+} = require("./getAssociations");
 
 async function createAssociation(vegetable, associations) {
   var data = await getAssociations();
   var newAssociation = [];
   var action;
+  //   if (!associations) {
+  //     action = 3;
+  //   } else {
   data.associations.forEach((element, i) => {
     if (element.vegetable == vegetable) {
       associations.forEach((associationInput) => {
@@ -23,6 +30,8 @@ async function createAssociation(vegetable, associations) {
       }
     }
   });
+  //   }
+
   switch (action) {
     case 1:
       modifyAssociation(data);
@@ -40,29 +49,10 @@ async function createAssociation(vegetable, associations) {
   }
 }
 
-async function getAssociations() {
-  var configFile = fs.readFileSync("./DB/associations.JSON", "utf8");
-  var config = JSON.parse(configFile);
-  return config;
-}
-async function appendObject(obj) {
-  var configFile = fs.readFileSync("./DB/associations.JSON", "utf8");
-  var config = JSON.parse(configFile);
-  console.log("config : " + config);
-  config.associations.push(obj);
-  var configJSON = JSON.stringify(config);
-  fs.writeFileSync("./DB/associations.JSON", configJSON);
-}
-async function modifyAssociation(newData) {
-  fs.writeFile(
-    "./DB/associations.JSON",
-    JSON.stringify(newData),
-    function writeJSON(err) {
-      if (err) return console.log(err);
-    }
-  );
-}
+assoPersil = ["ciboule", "capucine"];
 
-// assoPersil = ["fève", "bourrache"];
+createAssociation("persil", assoPersil);
 
-// createAssociation("roquette", assoPersil);
+module.exports = {
+  createAssociation: createAssociation,
+};

@@ -1,5 +1,3 @@
-console.log("dirname");
-console.log(__dirname);
 const { scrap } = require("../lib/https.js");
 const htmlparser2 = require("htmlparser2");
 const util = require("util");

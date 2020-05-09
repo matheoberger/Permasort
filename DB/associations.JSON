@@ -1,1 +1,12 @@
-{"associations":[{"vegetable":"persil","vegetableAssociations":["oseille","bourrache","ciboule","oignon","fève"]},{"vegetable":"roquette","vegetableAssociations":["fève","bourrache"]}]}
+{
+  "associations": [
+    {
+      "vegetable": "persil",
+      "vegetableAssociations": ["fève", "bourrache", "ciboule", "capucine"]
+    },
+    { "vegetable": "origan", "vegetableAssociations": [] },
+    { "vegetable": "feve", "vegetableAssociations": [] },
+    { "vegetable": "ciboule", "vegetableAssociations": [] },
+    { "vegetable": "capucine", "vegetableAssociations": [] }
+  ]
+}
