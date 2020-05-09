@@ -32,7 +32,7 @@ async function load(vegetableInput) {
     { decodeEntities: true }
   );
 
-  console.clear();
+  // console.clear();
   // console.log(`vegetable : ${vegetable}`);
 
   const doParse = new Promise(async (resolve) => {

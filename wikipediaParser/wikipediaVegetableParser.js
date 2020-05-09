@@ -1,5 +1,5 @@
 const htmlparser2 = require("htmlparser2");
-const util = require("util");
+// const util = require("util");
 const https = require("https");
 var fs = require("fs");
 
@@ -221,7 +221,7 @@ async function formatFamily(rawFamily) {
 
 async function loadFamilies() {
   return new Promise((resolve) => {
-    fs.readFile("./familiesArray.txt", "utf8", (err, data) => {
+    fs.readFile("./wikipediaParser/familiesArray.txt", "utf8", (err, data) => {
       if (err) {
         console.log(err);
       }
@@ -260,8 +260,4 @@ async function ParseFamilies() {
   return;
 }
 
-loadControler("courgette").then((data) => {
-  console.log("--> " + data);
-});
-
-module.exports = {};
+module.exports = { loadControler: loadControler };

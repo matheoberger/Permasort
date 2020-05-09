@@ -1,10 +1,12 @@
-const { scrap } = require("../lib/https");
+console.log("dirname");
+console.log(__dirname);
+const { scrap } = require("../lib/https.js");
 const htmlparser2 = require("htmlparser2");
 const util = require("util");
 
 async function loadDataFromPage(URL) {
   var waterNeed;
-  var exposition = [];
+  var exposure = [];
   var sizeType = [];
   var size;
   var density = [];
@@ -30,20 +32,20 @@ async function loadDataFromPage(URL) {
         if (attribs.class) {
           if (attribs.class == "w_1_3 liste_illustration") {
             stopWriting = true;
-            // console.log("footer categorie exposition");
+            // console.log("footer categorie exposure");
           }
         }
 
         if (name === "span" && attribs.class && !stopWriting) {
-          if (attribs.class.includes("exposition_")) {
+          if (attribs.class.includes("exposure_")) {
             if (attribs.class.includes("_soleil")) {
-              exposition.push("sunny");
+              exposure.push("sunny");
             } else if (attribs.class.includes("_mi_ombre")) {
-              exposition.push("semi-shade");
+              exposure.push("semi-shade");
             } else if (attribs.class.includes("_ombre")) {
-              exposition.push("shade");
+              exposure.push("shade");
             }
-            // console.log(`expo : ${exposition}`);
+            // console.log(`expo : ${exposure}`);
             // console.log(attribs.text);
           }
           if (attribs.class.includes("besoin_eau") && !waterNeed) {
@@ -98,7 +100,7 @@ async function loadDataFromPage(URL) {
       this.height = [];
       this.density = [];
       this.waterNeed = waterNeed;
-      this.exposition = exposition;
+      this.exposure = exposure;
       density.forEach((element) => {
         if (!isNaN(element)) {
           // console.log("This is a number");
