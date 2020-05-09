@@ -4,24 +4,44 @@ const util = require("util");
 
 async function loadDataFromPage(URL) {
   var waterNeed;
-  var exposition;
+  var exposition = [];
   var sizeType = [];
-  var size = [];
+  var size;
   var density = [];
-  var parseDensity = [];
+  var parseDensity;
+  var allText;
+  var allOpenTag;
+  var stopWriting = false;
+  const densityRegex = new RegExp(
+    /(?<=Densité\s+)([ 0-9a-zA-Z/à]+)(?=(m²|m2))/,
+    "g"
+  );
+  const sizeRegex = "[0-9,]+( à )[0-9,]+( m)";
+  const HeightWidthRegex = "(Largeur)|(Hauteur)";
+  const extractNumbersRegex = /[0-9,]+/g;
 
   const parser = new htmlparser2.Parser(
     {
       onopentag(name, attribs) {
         // console.log(name, attribs);
-        if (name === "span" && attribs.class) {
-          if (attribs.class.includes("exposition_") && !exposition) {
+        if (!stopWriting) {
+          allOpenTag += attribs.class;
+        }
+        if (attribs.class) {
+          if (attribs.class == "w_1_3 liste_illustration") {
+            stopWriting = true;
+            // console.log("footer categorie exposition");
+          }
+        }
+
+        if (name === "span" && attribs.class && !stopWriting) {
+          if (attribs.class.includes("exposition_")) {
             if (attribs.class.includes("_soleil")) {
-              exposition = "sunny";
+              exposition.push("sunny");
             } else if (attribs.class.includes("_mi_ombre")) {
-              exposition = "semi-shade";
+              exposition.push("semi-shade");
             } else if (attribs.class.includes("_ombre")) {
-              exposition = "shade";
+              exposition.push("shade");
             }
             // console.log(`expo : ${exposition}`);
             // console.log(attribs.text);
@@ -33,37 +53,12 @@ async function loadDataFromPage(URL) {
         }
       },
       ontext(text) {
-        const densityRegex =
-          "[0-9]{1,3}[ a-z/]{1,8}[2²]|[0-9]{1,3}( à )[0-9]{1,3}[ a-z/]{1,8}[2²]";
-        const sizeRegex = "[0-9,]+( à )[0-9,]+( m)";
-        const HeightWidthRegex = "(Largeur)|(Hauteur)";
-        const extractNumbersRegex = /[0-9,]+/g;
-
+        allText += text;
         // if (text.match("sol+[a-z ]{8}")) {
         //   console.log(text);
         // }
 
-        console.log(text);
-
-        if (text.match(densityRegex)) {
-          parseDensity = text.match(densityRegex);
-          density = parseDensity;
-        }
-        if (text.match("(Largeur)|(Hauteur)")) {
-          sizeType.push(
-            text
-              .match(HeightWidthRegex)[0]
-              .replace("Largeur", "width")
-              .replace("Hauteur", "height")
-          );
-        }
-        if (text.match(sizeRegex)) {
-          var parseUnknowSize = text
-            .match(sizeRegex)[0]
-            .match(extractNumbersRegex);
-          size.push(parseUnknowSize);
-          // console.log(size);
-        }
+        // console.log(text);
       },
       onclosetag(tagname) {},
     },
@@ -73,18 +68,43 @@ async function loadDataFromPage(URL) {
   const coucou = new Promise(async (resolve) => {
     parser.write(await scrap(URL));
     parser.end();
+    // console.log("parser has been writed");
     resolve();
   });
-
   return new Promise(async (response) => {
     await coucou.then(() => {
+      // console.log(allText);
+      // console.log(allOpenTag);
+      if (allText.match(densityRegex)) {
+        density = allText.match(densityRegex)[0].match(/[0-9]+/);
+      }
+      if (allText.match("(Largeur)|(Hauteur)")) {
+        sizeType.push(
+          allText
+            .match(HeightWidthRegex)[0]
+            .replace("Largeur", "width")
+            .replace("Hauteur", "height")
+        );
+      }
+      if (allText.match(sizeRegex)) {
+        var parseUnknowSize = allText
+          .match(sizeRegex)[0]
+          .match(extractNumbersRegex);
+        size = parseUnknowSize;
+        // console.log(size);
+      }
+
       this.width = [];
       this.height = [];
-      this.density;
+      this.density = [];
       this.waterNeed = waterNeed;
       this.exposition = exposition;
-      this.density = density;
-      console.log(`parseDensity: ${parseDensity}`);
+      density.forEach((element) => {
+        if (!isNaN(element)) {
+          // console.log("This is a number");
+          this.density.push(element);
+        }
+      });
 
       if (sizeType[0].includes("height")) {
         this.height.push(size[0]);
@@ -94,6 +114,7 @@ async function loadDataFromPage(URL) {
         this.height.push(size[1]);
       }
     });
+    wait = false;
     response(this);
   });
 }

@@ -56,6 +56,7 @@ async function loadControler(vegetableInput) {
   console.log("search family name");
   const isAmbig = await disambiguation(vegetableInput);
   if (isAmbig) {
+    console.log("There could be some homonymies");
     return null;
   }
   var preresult = await loadInfobox(vegetableInput);
@@ -82,7 +83,7 @@ async function disambiguation(vegetable) {
     `https://fr.wikipedia.org/w/api.php?action=query&titles=${vegetable}&prop=pageprops&ppprop=disambiguation&format=json`
   );
   if (result.match("disambiguation")) {
-    console.log("ambig");
+    console.log(" ambig");
     return true;
   }
   return false;
