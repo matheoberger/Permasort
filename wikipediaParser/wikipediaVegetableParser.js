@@ -57,7 +57,8 @@ async function loadControler(vegetableInput) {
   const isAmbig = await disambiguation(vegetableInput);
   if (isAmbig) {
     console.log("There could be some homonymies");
-    return null;
+
+    return `https://fr.wikipedia.org/wiki/${vegetableInput}`;
   }
   var preresult = await loadInfobox(vegetableInput);
   if (preresult) {
@@ -73,7 +74,6 @@ async function loadControler(vegetableInput) {
       } else return null;
     });
   } else {
-    console.log("There could be some homonymies");
     return null;
   }
 }
@@ -221,7 +221,7 @@ async function formatFamily(rawFamily) {
 
 async function loadFamilies() {
   return new Promise((resolve) => {
-    fs.readFile("./wikipediaParser/familiesArray.txt", "utf8", (err, data) => {
+    fs.readFile("../wikipediaParser/familiesArray.txt", "utf8", (err, data) => {
       if (err) {
         console.log(err);
       }

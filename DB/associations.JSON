@@ -5,8 +5,10 @@
       "vegetableAssociations": ["fève", "bourrache", "ciboule", "capucine"]
     },
     { "vegetable": "origan", "vegetableAssociations": [] },
-    { "vegetable": "feve", "vegetableAssociations": [] },
-    { "vegetable": "ciboule", "vegetableAssociations": [] },
-    { "vegetable": "capucine", "vegetableAssociations": [] }
+    { "vegetable": "coriandre", "vegetableAssociations": [] },
+    { "vegetable": "coriandre", "vegetableAssociations": [] },
+    { "vegetable": "coriandre", "vegetableAssociations": [] },
+    { "vegetable": "pomme de terre", "vegetableAssociations": [] },
+    { "vegetable": "persil\r\n", "vegetableAssociations": [] }
   ]
 }

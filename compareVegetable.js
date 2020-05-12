@@ -1,5 +1,6 @@
 const fs = require("fs");
 const util = require("util");
+const getVegetables = require("./getVegetables");
 const {
   getAssociations,
   modifyAssociation,
@@ -10,7 +11,7 @@ async function findAssociation(vegetableInput) {
   var vegetableInputSpec;
   var similarVegetableInput;
 
-  data = await readVegetableFile();
+  data = await getVegetables.getVegetables();
 
   for (var i = 0; i < data.vegetable.length; i++) {
     // console.log("coucou");
@@ -23,12 +24,12 @@ async function findAssociation(vegetableInput) {
       }
     }
   }
-  console.log(vegetableInputSpec);
+  // console.log(vegetableInputSpec);
   if (similarVegetableInput) {
-    console.log("hey");
-    console.log("they may be duplicate vegetable for the same name : ");
+    // console.log("hey");
+    // console.log("they may be duplicate vegetable for the same name : ");
     similarVegetableInput.forEach((e) => {
-      console.log(util.inspect(e));
+      // console.log(util.inspect(e));
     });
   }
 
@@ -50,8 +51,8 @@ async function findAssociation(vegetableInput) {
       }
     });
   });
-  console.log(associateVegetableName);
-  console.log(associateVegetables);
+  // console.log(associateVegetableName);
+  // console.log(associateVegetables);
   var result = await sortBestAssociations(
     vegetableInputSpec,
     associateVegetables
@@ -67,7 +68,7 @@ async function findAssociation(vegetableInput) {
   for (var i = higherResult; i >= 0; i--) {
     result.forEach((element) => {
       if (element[1] == i) {
-        console.log(element[0].name + " :  " + element[1]);
+        // console.log(element[0].name + " :  " + element[1]);
         sortResult.push(element);
       }
     });
@@ -116,18 +117,10 @@ async function sortBestAssociations(vegetable, associateVegetables) {
     }
     pointMatch.push(tempArr);
   });
-  console.log(pointMatch);
+  // console.log(pointMatch);
   return pointMatch;
 }
 
-async function readVegetableFile() {
-  var configFile = fs.readFileSync("./DB/vegetables.JSON", "utf8");
-  var config = JSON.parse(configFile);
-  return config;
-}
-
-findAssociation("persil").then((result) => {
-  result.forEach((element) => {
-    console.log(element);
-  });
-});
+module.exports = {
+  findAssociation: findAssociation,
+};

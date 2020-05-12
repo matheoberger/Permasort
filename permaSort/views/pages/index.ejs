@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <title>Test</title>
+  <link rel="stylesheet" href="/assets/semantic/semantic.min.css" />
+  <style>
+    .main_container {
+      margin-top: 7em;
+    }
+  </style>
+  <head>
+    Demo
+  </head>
+  <body>
+    <div class="ui fixed inverted menu">
+      <a href="/" class="header item">Accueil</a>
+    </div>
+    <div class="main_container">
+      <% if(locals.error){ %>
+
+      <div class="ui negative message">
+        <%= error %>
+      </div>
+
+      <% } %>
+
+      <form action="/" method="POST" class="ui form">
+        <div class="field">
+          <label for="message">Quel plante cherchez vous à associer?</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit" class="ui blue labeled submit icon button">
+          <i class="icon edit"></i>Envoyer
+        </button>
+      </form>
+
+      <div><%= locals.coucou %></div>
+      <% if(locals.result){ %>
+      <div>For this vegetable : <%= result.name %></div>
+      <div>Exposure : <%= result.exposure %></div>
+      <div>Family : <%= result.family %></div>
+      <% } %> <%- include("footer") %> <% if(locals.associations){
+      locals.associations.forEach(element => { %>
+      <div>Vegetable : <%= element[0].vegetable %></div>
+      <div>Exposure : <%= element[0].exposure %></div>
+      <div>Family : <%= element[0].family %></div>
+      <div>Score : <%= element[1] %></div>
+
+      <% });} %> <%- include("footer") %>
+    </div>
+  </body>
+</html>

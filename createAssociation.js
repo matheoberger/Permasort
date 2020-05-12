@@ -49,9 +49,8 @@ async function createAssociation(vegetable, associations) {
   }
 }
 
-assoPersil = ["ciboule", "capucine"];
-
-createAssociation("persil", assoPersil);
+// assoPersil = ["ciboule", "capucine"];
+// createAssociation("persil", assoPersil);
 
 module.exports = {
   createAssociation: createAssociation,

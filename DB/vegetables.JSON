@@ -1,13 +1,15 @@
 {
   "vegetable": [
-    { "name": "persil", "exposition": ["sunny"], "family": "Apiaceae" },
-    { "name": "bourrache", "exposition": ["sunny"], "family": "Boraginaceae" },
+    { "name": "persil", "exposure": ["sunny"], "family": "Apiaceae" },
+    { "name": "bourrache", "exposure": ["sunny"], "family": "Boraginaceae" },
     {
       "name": "fève",
-      "exposition": ["sunny", "semi-shade"],
+      "exposure": ["sunny", "semi-shade"],
       "family": "Apiaceae"
     },
     { "name": "ciboule", "exposure": "semi-shade", "family": "" },
-    { "name": "capucine", "exposure": "semi-shade", "family": "Blechnaceae" }
+    { "name": "capucine", "exposure": "semi-shade", "family": "Blechnaceae" },
+    { "name": "coriandre", "exposure": [], "family": "Apiaceae" },
+    { "name": "pomme de terre", "exposure": [], "family": "Solanaceae" }
   ]
 }
