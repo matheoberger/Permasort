@@ -13,7 +13,7 @@ This is an innovating backend service for permaculture web tools' implementation
 The API accept only one string output json formatted : the vegetable's name. The API is insensitive to common name or scientifical name, you can ask both of it.
 
 ### Output
-JSON formatted string with the name of the vegetable, its exposure, family, water need, width, height and soil need and a :keycap_ten: score.
+JSON formatted string containing :
 
  * :sunflower: Vegetable name;
  * :low_brightness: Exposure
@@ -26,10 +26,15 @@ JSON formatted string with the name of the vegetable, its exposure, family, wate
 
 ## Web demo implementation
 
-
-
-
-
+You have to run the demo implementation with a virtual server like live server on vscode.
+Run it and go to the http://localhost/index
 
 ![Alt text](/Images/permasortAPI.gif)
+
+That's it, enjoy !
+
+## About me
+
+<matheo.berger@viacesi.fr>
+
 
