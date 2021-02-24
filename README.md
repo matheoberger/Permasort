@@ -35,6 +35,7 @@ That's it, enjoy !
 
 ## About me
 
+Mathéo Berger, 1rst year in engineering school major computer science at CESI Bordeaux, France.
 <matheo.berger@viacesi.fr>
 
 
