@@ -52,20 +52,6 @@ async function createAuto(vegetableInput) {
   return ["success"];
 }
 
-// async function appendObject(obj) {
-//   var configFile = fs.readFileSync("./DB/vegetables.JSON", "utf8");
-//   var config = JSON.parse(configFile);
-//   config.vegetable.push(obj);
-//   var configJSON = JSON.stringify(config);
-//   fs.writeFileSync("./DB/vegetables.JSON", configJSON);
-// }
-
-// coucou = {
-//   name: "capucine",
-//   exposure: "semi-shade",
-//   family: "Blechnaceae",
-// };
-// createVegetable(coucou, 2);
 
 module.exports = {
   createVegetable: createVegetable,
