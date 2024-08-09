@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <form class="d-flex" method="POST">
+                    {% csrf_token %}
+                    <input class="form-control search-bar" type="search" name="searched_vegetable" placeholder="Cherchez un légume" aria-label="Search">
+                    <button class="btn search-button" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock %}

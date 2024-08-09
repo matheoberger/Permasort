@@ -1,0 +1,20 @@
+{% extends './base.html' %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+    <div class="text-center mt-5">
+        <h2>Results</h2>
+        {% if results %}
+            <div class="list-group">
+                {% for result in results %}
+                    <h3 class="list-group-item">{{ result.name }}</h3>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="alert alert-warning" role="alert">
+                <h3>Hey! You Forgot To Search For A Vegetable...</h3>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
