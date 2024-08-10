@@ -6,6 +6,8 @@ class Vegetable(models.Model):
         return self.name
     name = models.CharField(max_length=200)
     family = models.CharField(max_length=200)
+    ground_sowing = models.CharField(max_length=200, blank=True)
+    greenhouse_sowing = models.CharField(max_length=200, blank=True)
 
 
 class GoodAssociation(models.Model):
