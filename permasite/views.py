@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.db.models import Q 
 from .models import Vegetable, GoodAssociation, BadAssociation
 
@@ -17,7 +17,7 @@ def search(request):
         result = Vegetable.objects.filter(name__iexact=searched)
         if not result:
             messages.error(request, "Le légume que vous cherchez n'existe pas.")
-            return render(request, "search.html") # Rediriger pour afficher le message
+            return render(request, "search.html") # Rediriger   afficher le message
         else :
             good_associated_vegetables = GoodAssociation.objects.filter(Q(left_vegetable__in=result) | Q(right_vegetable__in=result))
             bad_associated_vegetables = BadAssociation.objects.filter(Q(left_vegetable__in=result) | Q(right_vegetable__in=result))
@@ -33,3 +33,20 @@ def search(request):
 
 def home(request):
     return render(request, "home.html")
+
+def draw(request):
+    return render(request, "draw.html")
+
+def compose_plan(request):
+    if request.method == 'POST':
+        selected_vegetables = request.POST.getlist('selected_vegetables')
+
+        for vegetable in selected_vegetables:
+            good_list = GoodAssociation.objects.filter(Q(left_vegetable__in=vegetable) | Q(right_vegetable__in=vegetable))
+            bad_list = BadAssociation.objects.filter(Q(left_vegetable__in=vegetable) | Q(right_vegetable__in=vegetable))
+
+
+        return JsonResponse({'status': 'success', 'selected_vegetables': selected_vegetables})
+
+    all_vegetables = Vegetable.objects.all()
+    return render(request, "compose.html", {'all_vegetables': all_vegetables})
