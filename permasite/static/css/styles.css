@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* General styles */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Header styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* List styles */
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+/* Alert styles */
+.alert {
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
