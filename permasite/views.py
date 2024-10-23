@@ -39,11 +39,12 @@ def draw(request):
 
 def compose_plan(request):
 
-    plan_size = 4
+    # pattern_size = 4
 
     if request.method == 'POST':
 
         selected_vegetables = request.POST.getlist('selected_vegetables')
+        pattern_size = int(request.POST.get('pattern_size'))
 
         if not selected_vegetables:
             return JsonResponse({'status': 'error', 'error_id':'no_veg_sel' , 'message': "No vegetable selected "})
@@ -68,9 +69,9 @@ def compose_plan(request):
                 if sorted((s_vegetable, vegetable)) not in good_list and sorted((s_vegetable, vegetable)) not in bad_list and sorted((vegetable, s_vegetable)) not in good_list and sorted((vegetable, s_vegetable)) not in bad_list :
                     neutral_list.append(sorted((s_vegetable, vegetable)))
     
-        pattern =[''] * plan_size
+        pattern =[''] * pattern_size
 
-        for i in range(plan_size):
+        for i in range(pattern_size):
 
             veg_index = i % len(selected_vegetables)
             veg = selected_vegetables[veg_index]
@@ -82,9 +83,9 @@ def compose_plan(request):
             is_right_neighbour_good = False
 
             if left_neighbour < 0:
-                left_neighbour = plan_size - 1
+                left_neighbour = pattern_size - 1
 
-            if right_neighbour >= plan_size:
+            if right_neighbour >= pattern_size:
                 right_neighbour = 0
 
             if pattern[right_neighbour]:
@@ -127,9 +128,9 @@ def compose_plan(request):
             right_neighbour = i+1
 
             if left_neighbour < 0:
-                left_neighbour = plan_size - 1
+                left_neighbour = pattern_size - 1
 
-            if right_neighbour >= plan_size:
+            if right_neighbour >= pattern_size:
                 right_neighbour = 0
 
             for s_vegetable in selected_vegetables:
@@ -140,6 +141,8 @@ def compose_plan(request):
                     print("neutral_couples : ", left_neutral_couples, " and ", right_neutral_couples)
                     pattern[i] = veg
 
+        #TODO : add color for each type of list in pattern (red for bad, grey for neutral and green for good)
+        #TODO : add a binding with interface in order to set size of pattern
 
         print("FINAL pattern :", pattern)
 
@@ -147,8 +150,9 @@ def compose_plan(request):
         print("good_list : ", good_list)
         print("bad_list : ", bad_list)
         print("neutral_list : ", neutral_list)
+        print("selected_vegetables : ", selected_vegetables)
         print("---------------------------------------------------------------")
-        print("---------------------------------------------------------------")
+        print("-------------------------------------------------------------    --")
         print("---------------------------------------------------------------")
             
         return JsonResponse({'status': 'success', 'selected_vegetables': selected_vegetables, 'pattern': pattern})

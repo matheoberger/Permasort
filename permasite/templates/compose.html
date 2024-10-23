@@ -4,6 +4,11 @@
 
     {% include 'navbar.html' %}
 
+    <div class="m-5">
+        <input type="text" name="values" value="" form="vegetableForm">
+        <label for="customRange3" class="form-label">Pattern size</label>
+        <input type="range" class="form-range" min="1" max="10" step="1" id="customRange3">
+    </div>
     <form id="vegetableForm" class="d-flex" method="POST" >
         {% csrf_token %}
         {% for vegetable in all_vegetables %}
@@ -12,7 +17,26 @@
         {% endfor %}
     </form>
 
+        <div class="mt-3">
+            <table class="table result_table">
+
+            <tbody>
+            <tr class="result_table_row">
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+
     <script>
+        document.querySelectorAll('input[type="range"]').forEach(function(input) {
+            input.addEventListener('change', function() {
+                document.querySelector('input[name="values"]').value = this.value;
+            });
+            input.addEventListener('input', function() {
+                document.querySelector('input[name="values"]').value = this.value;
+            });
+        });
         function getCookie(name) {
             let cookieValue = null;
             if (document.cookie && document.cookie !== '') {
@@ -46,6 +70,7 @@
                 const formData = new URLSearchParams();
                 formData.append('csrfmiddlewaretoken', csrftoken);
                 checkedVegetables.forEach(vegetable => formData.append('selected_vegetables', vegetable));
+                formData.append('pattern_size', document.querySelector('input[name="values"]').value);
         
                 // Envoi de la requête AJAX
                 fetch("{% url 'compose_plan' %}", {
@@ -61,8 +86,27 @@
                     }
                     return response.json();  // Traiter la réponse comme JSON
                 })
-                .then(data => {
-                    console.log('Success:', data);
+                .then(data => { 
+                    if (data.status === 'success') {
+                        let table = document.querySelector('.result_table_row');
+                        while (table.firstChild) {
+                            table.firstChild.remove();
+                        }
+                        for (let i = 0; i < data.pattern.length; i++) {
+                            const newCell = document.createElement('td');
+                            newCell.textContent = data.pattern[i];
+                            table.appendChild(newCell);
+                        }
+                    }
+                    if (data.status === 'error') {
+                        if (data.error_id == "no_veg_sel"){
+                            let table = document.querySelector('.result_table_row');
+                            while (table.firstChild) {
+                                table.firstChild.remove();
+                            }
+                        }
+                        console.error(data.message);
+                    }
                 })
                 .catch((error) => {
                     console.error('Error:', error);
@@ -73,35 +117,7 @@
     </script>
 
 
-    <div class="mt-3">
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>*
-      </div>
+
+
+
 {% endblock%}
