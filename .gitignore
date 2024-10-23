@@ -1,1 +1,47 @@
-/env
+# Ignorer la base de données locale SQLite
+db.sqlite3
+db.sqlite3-journal
+
+# Ignorer les fichiers de migrations
+**/migrations/*
+!**/migrations/__init__.py  # Garde l'init.py, important pour la structure des modules
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers compilés Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorer les environnements virtuels
+venv/
+env/
+.virtualenv/
+ENV/
+ENV.bak/
+
+# Ignorer les fichiers de configuration de l'IDE (ex. : PyCharm, VSCode)
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignorer les fichiers de configurations système et utilisateur
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers statiques générés
+staticfiles/
+static/
+
+# Ignorer les fichiers de médias uploadés
+media/
+
+# Ignorer les fichiers temporaires générés par l'éditeur ou le système
+*.swp
+*.swo
+*.bak
+
+# Ignorer les fichiers d'historique des commandes
+*.history
