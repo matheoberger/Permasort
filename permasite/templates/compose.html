@@ -32,6 +32,9 @@
         document.querySelectorAll('input[type="range"]').forEach(function(input) {
             input.addEventListener('change', function() {
                 document.querySelector('input[name="values"]').value = this.value;
+                document.querySelectorAll('input[name="vegetables"]:checked').forEach(function(checkbox) {
+                    checkbox.dispatchEvent(new Event('change'));
+                });
             });
             input.addEventListener('input', function() {
                 document.querySelector('input[name="values"]').value = this.value;
