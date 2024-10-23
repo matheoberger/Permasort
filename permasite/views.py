@@ -162,15 +162,16 @@ def compose_plan(request):
             right_neighbour = (i+1) % pattern_size
 
             for s_vegetable in selected_vegetables:
-                left_neutral_couples = [neutral_tuple for neutral_tuple in neutral_list if sorted((veg, pattern[left_neighbour])) == sorted(neutral_tuple) ]
-                right_neutral_couples = [ neutral_tuple for neutral_tuple in neutral_list if sorted((veg, pattern[right_neighbour])) == sorted(neutral_tuple)]
-                left_good_couples = [good_tuple for good_tuple in good_list if sorted((veg, pattern[left_neighbour])) == sorted(good_tuple)]
-                right_good_couples = [good_tuple for good_tuple in good_list if sorted((veg, pattern[right_neighbour])) == sorted(good_tuple)]
+                left_neutral_couples = [neutral_tuple for neutral_tuple in neutral_list if sorted((s_vegetable, pattern[left_neighbour])) == sorted(neutral_tuple) ]
+                right_neutral_couples = [ neutral_tuple for neutral_tuple in neutral_list if sorted((s_vegetable, pattern[right_neighbour])) == sorted(neutral_tuple)]
+                left_good_couples = [good_tuple for good_tuple in good_list if sorted((s_vegetable, pattern[left_neighbour])) == sorted(good_tuple)]
+                right_good_couples = [good_tuple for good_tuple in good_list if sorted((s_vegetable, pattern[right_neighbour])) == sorted(good_tuple)]
                 
-                print("selected veg ", (veg, pattern[left_neighbour], pattern[right_neighbour], left_neighbour, right_neighbour))
+                print("selected veg ", (s_vegetable, pattern[left_neighbour], pattern[right_neighbour], left_neighbour, right_neighbour))
+
                 if left_neutral_couples or left_good_couples and right_neutral_couples or right_good_couples:
                     print("neutral_couples : ", left_neutral_couples, " and ", right_neutral_couples)
-                    pattern[i] = veg
+                    pattern[i] = s_vegetable
 
         #TODO : add color for each type of list in pattern (red for bad, grey for neutral and green for good)
 
